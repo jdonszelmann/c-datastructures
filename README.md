@@ -12,14 +12,14 @@ ___
  - [x] Binary Tree
  - [x] Stack
  - [x] Linked List (Single)
- - [ ] Linked List (Double)
- - [ ] Array
- - [ ] Multimap
- - [ ] Dictionary
- - [ ] Set
- - [ ] Multiset
- - [ ] Queue (Double ended)
- - [ ] Tree
- - [ ] Heap
- - [ ] Priority Queue (Double ended)
- - [ ] Graph
+ - [-] Linked List (Double)
+ - [-] Array
+ - [-] Multimap
+ - [-] Dictionary
+ - [-] Set
+ - [-] Multiset
+ - [-] Queue (Double ended)
+ - [-] Tree
+ - [-] Heap
+ - [-] Priority Queue (Double ended)
+ - [-] Graph
