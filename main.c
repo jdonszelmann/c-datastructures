@@ -81,5 +81,12 @@ int main(){
 		// stack_print(stack,intprintfn);
 		// stack_free(stack);
 
+	//(single) linked lists
+		linkedlist_t * list = linkedlist_new();
+		linkedlist_append(list,&a);
+		linkedlist_append(list,&b);
+		linkedlist_append(list,&c);
+		linkedlist_print(list,intprintfn);
+
 	return 0;
 }

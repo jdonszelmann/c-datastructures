@@ -8,6 +8,6 @@
 #include "bintree.h"
 #include "arraylist.h"
 #include "stack.h"
-#include "list.h"
+#include "linkedlist.h"
 
 #endif
