@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['main_20page',['Main Page',['../index.html',1,'']]]
+  ['linkedlist',['linkedlist',['../structlinkedlist.html',1,'']]],
+  ['linkedlist_5flink',['linkedlist_link',['../structlinkedlist__link.html',1,'']]]
 ];

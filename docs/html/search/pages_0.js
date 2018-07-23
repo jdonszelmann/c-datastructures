@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['main_20page',['Main Page',['../index.html',1,'']]]
+  ['c_2ddatastructures',['c-datastructures',['../index.html',1,'']]]
 ];
