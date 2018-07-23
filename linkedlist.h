@@ -9,7 +9,7 @@
 #include <stdbool.h>
 #include <string.h>
 
-#define foreach(__value,__list) for(linkedlist_link_t * __value=__list->TAIL;__value!=NULL;__value=__value->next)
+#define foreach(__value,__list) for(linkedlist_link_t * __value=__list->HEAD;__value!=NULL;__value=__value->next)
 
 
 typedef struct linkedlist_link{
@@ -59,23 +59,23 @@ static inline linkedlist_link_t * linkedlist_seek(linkedlist_t * list, int posit
 		}
 		i++;
 	}
-	printf("linkedlist index out of bounds");
+	printf("linkedlist index out of bounds\n");
 	exit(-1);
 }
 
 extern inline void linkedlist_setvalue(linkedlist_t * list,int index,void * value){
-	linkedlist_link_t link = linkedlist_seek(list,index);
+	linkedlist_link_t * link = linkedlist_seek(list,index);
 	link->value = value;
 }
 
 extern inline void * linkedlist_getvalue(linkedlist_t * list, int index){
-	linkedlist_link_t link = linkedlist_seek(list,index);
+	linkedlist_link_t * link = linkedlist_seek(list,index);
 	return link->value;
 }
 
 static inline void linkedlist_firstelement(linkedlist_t * list, linkedlist_link_t * link){
-	if(list->TAIL == NULL){
-		list->TAIL = link;
+	if(list->HEAD == NULL){
+		list->HEAD = link;
 	}
 }
 
@@ -83,17 +83,91 @@ extern inline void linkedlist_append(linkedlist_t * list, void * value){
 	linkedlist_link_t * link = linkedlist_link_new();
 	linkedlist_firstelement(list,link);
 	link->value = value;
-	if(list->HEAD != NULL){
-		list->HEAD->next = link;
+	if(list->TAIL != NULL){
+		list->TAIL->next = link;
 	}
-	list->HEAD = link;
+	list->TAIL = link;
+	list->size++;
+}
+
+static inline void linkedlist_link_freeall(linkedlist_link_t * list){
+	free(list->value);
+	free(list);
+}
+
+static inline void linkedlist_link_free(linkedlist_link_t * list){
+	free(list);
+}
+
+extern inline void linkedlist_freeall(linkedlist_t * list){
+	foreach(link,list){
+		linkedlist_link_freeall(link);
+	}
+	free(list);
+}
+
+extern inline void linkedlist_free(linkedlist_t * list){
+	foreach(link,list){
+		linkedlist_link_free(link);
+	}
+	free(list);
+}
+
+extern inline void linkedlist_delete(linkedlist_t * list, int index){
+	if(index == 0 || (index<0 && list->size-1==-index)){
+		linkedlist_link_t * h = list->HEAD; 
+		list->HEAD=list->HEAD->next;
+		return linkedlist_link_free(h);
+	}
+	linkedlist_link_t * prevlink;	
+	if(index >= 0){
+		prevlink = linkedlist_seek(list,index-1);
+	}else{
+		prevlink = linkedlist_seek(list,index-2);
+	}
+	linkedlist_link_t * h = prevlink->next; 
+	prevlink->next=prevlink->next->next;
+	linkedlist_link_free(h);
+}
+
+extern inline void linkedlist_insert(linkedlist_t * list, int index,void * value){
+	if(list->size == 0){
+		if(index == 0){
+			return linkedlist_append(list,value);
+		}
+		printf("linkedlist index out of bounds\n");
+		exit(-1);		
+	}
+	if(index == 0 || (index<0 && list->size+1==-index)){
+		linkedlist_link_t * link = linkedlist_link_new();
+		link->value = value;
+		link->next = list->HEAD;
+		list->HEAD = link;
+		list->size++;
+		return;
+	}
+
+	linkedlist_link_t * link = linkedlist_link_new();
+	link->value = value;
+	linkedlist_link_t * prevlink;
+	if(index >= 0){
+		prevlink = linkedlist_seek(list,index-1);
+	}else{
+		prevlink = linkedlist_seek(list,index);
+	}
+
+	link->next = prevlink->next;
+	prevlink->next = link;
+	if(list->TAIL==prevlink){
+		list->TAIL = link;
+	}
 	list->size++;
 }
 
 extern inline void linkedlist_print(linkedlist_t * list, printfn_t printfn){
 	printf("[");
 	foreach(i,list){
-		if(i != list->TAIL) {printf(",");}
+		if(i != list->HEAD) {printf(",");}
 		printfn(i->value);
 	}
 	printf("]\n");

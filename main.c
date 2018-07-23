@@ -25,7 +25,7 @@ int main(){
 	int d = 6;
 	int e = 7;
 	int f = 8;
-
+	int g = 9;
 
 	//binary tree tests
 		// binarytree_t * tree = binarytree_new();	
@@ -83,10 +83,23 @@ int main(){
 
 	//(single) linked lists
 		linkedlist_t * list = linkedlist_new();
+		linkedlist_insert(list,0,&d);
 		linkedlist_append(list,&a);
 		linkedlist_append(list,&b);
+		linkedlist_insert(list,0,&e);
 		linkedlist_append(list,&c);
+		linkedlist_insert(list,2,&f);
+		linkedlist_insert(list,-2,&g);
 		linkedlist_print(list,intprintfn);
+		linkedlist_delete(list,0);
+		linkedlist_print(list,intprintfn);
+		linkedlist_delete(list,-5);
+		linkedlist_print(list,intprintfn);
+		linkedlist_delete(list,-5);
+		linkedlist_print(list,intprintfn);
+		linkedlist_delete(list,2);
+		linkedlist_print(list,intprintfn);
+		linkedlist_free(list);
 
 	return 0;
 }
