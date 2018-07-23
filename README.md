@@ -10,7 +10,7 @@ ___
  - [x] Arraylist
  - [x] Binary Tree
  - [x] Stack
- - [ ] Linked List (Single)
+ - [x] Linked List (Single)
  - [ ] Linked List (Double)
  - [ ] Array
  - [ ] Multimap
