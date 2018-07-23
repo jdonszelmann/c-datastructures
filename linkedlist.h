@@ -1,4 +1,4 @@
-
+/// Provides single linked lists.
 
 #ifndef LINKEDLIST_H
 #define LINKEDLIST_H

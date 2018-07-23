@@ -2,6 +2,8 @@
 # c-datastructures
 A collection of datastructures made in c (no dependencies).
 
+A full documentation can be found at https://jonay2000.github.io/c-datastructures/
+
 list of datastructures:
  - [x] = implemented
 ___
