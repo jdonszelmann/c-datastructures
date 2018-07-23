@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['custom_20doxygen_20theme',['Custom Doxygen Theme',['../index.html',1,'']]]
+  ['c_2ddatastructures',['c-datastructures',['../index.html',1,'']]]
 ];
