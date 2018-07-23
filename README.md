@@ -2,7 +2,7 @@
 A collection of datastructures made in c (no dependencies).
 
 list of datastructures:
- [x] = implemented
+ - [x] = implemented
 
  - [x] Arraylist
  - [x] Binary Tree
