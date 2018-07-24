@@ -74,6 +74,20 @@ extern inline void string_append(string_t * string,char value){
 	string->filled++;
 }
 
+extern inline void string_extend(string_t * string,string_t * other){
+	for (int i = 0; i < other->filled; ++i){
+		char item = string->value[i];
+		string_append(string,item);
+	}
+}
+
+
+extern inline void string_extend_charpnt(string_t * string,char * value){
+	string_t temp = charpnt_tostring(value)
+	string_extend(string,temp);
+	string_free(temp);
+}
+
 extern inline void string_set(string_t * string,char * value){
 	while(*value != '\0'){
 		char item = *value;

@@ -25,6 +25,8 @@ var searchData=
   ['string_5fcontains',['string_contains',['../string_8h.html#af23f1022da32b3ec3a7d9fdc795617b8',1,'string.h']]],
   ['string_5fcopy',['string_copy',['../string_8h.html#adb4a007fb9e300e9e0642354a0ec740b',1,'string.h']]],
   ['string_5fdelete',['string_delete',['../string_8h.html#ab9e0f3180d91b62ebb01a63b98f0b6d3',1,'string.h']]],
+  ['string_5fextend',['string_extend',['../string_8h.html#aa6bffdfdeecb595a0e76b3c924e4939b',1,'string.h']]],
+  ['string_5fextend_5fcharpnt',['string_extend_charpnt',['../string_8h.html#a14a252f4a366a55e9ec801d5a5442187',1,'string.h']]],
   ['string_5ffind',['string_find',['../string_8h.html#a0b28c6246d2d28540cd3c2869648c5fb',1,'string.h']]],
   ['string_5ffree',['string_free',['../string_8h.html#a8b16f1091818ecf0f5ba9dc5206958d6',1,'string.h']]],
   ['string_5ffreeall',['string_freeall',['../string_8h.html#af66fcb14deaa729686f56aa6688c219d',1,'string.h']]],
