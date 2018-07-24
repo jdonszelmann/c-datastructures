@@ -64,7 +64,7 @@ extern inline void * arraylist_getvalue(arraylist_t * arraylist, int index){
 }
 
 extern inline void arraylist_print(arraylist_t * arraylist, printfn_t printfn){
-	printf("[");
+	printf("arraylist [");
 	for(int i = 0; i<arraylist->filled;i++){
 		void * item = arraylist->value[i];
 		if(i != 0) {printf(",");}

@@ -191,7 +191,7 @@ extern inline void linkedlist_insert(linkedlist_t * list, int index,void * value
 }
 
 extern inline void linkedlist_print(linkedlist_t * list, printfn_t printfn){
-	printf("single linked list: [");
+	printf("single linked list [");
 	foreach(i,list){
 		if(i != list->HEAD) {printf(",");}
 		printfn(i->value);

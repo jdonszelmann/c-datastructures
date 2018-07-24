@@ -12,6 +12,7 @@
 #include "types.h"
 
 #define QUEUE_STARTSIZE 10
+#define QUEUE_AUTOCLEAR_DEFAULT 5
 
 
 typedef struct queue{
@@ -19,6 +20,7 @@ typedef struct queue{
 	int size;
 	int filled;
 	int emptyoffset;
+	int autoclear;
 }queue_t;
 
 extern inline queue_t * queue_new(){
@@ -28,121 +30,92 @@ extern inline queue_t * queue_new(){
 		QUEUE_STARTSIZE,
 		0,
 		0,
+		QUEUE_AUTOCLEAR_DEFAULT, //!< 0: no auto clear (fast!). Greater than 0: autoclear after n dequeues (smaller = slower)
 	};
 	return queue;
 }
 
-static inline void queue_resize(arraylist_t * arraylist,int newsize){
-	arraylist->value = realloc(arraylist->value,newsize*sizeof(void *));
-	arraylist->size = newsize;
+static inline void queue_resize(queue_t * queue,int newsize){
+	queue->value = realloc(queue->value,newsize*sizeof(void *));
+	queue->size = newsize;
 }
 
-static inline void queue_rebase(arraylist_t * arraylist){
-
+extern inline void queue_rebase(queue_t * queue){
+	int offset = queue->emptyoffset;
+	for (int i = queue->emptyoffset; i < queue->filled; ++i){
+		queue->value[i-offset] = queue->value[i];
+	}
+	queue->filled-=offset;
+	queue->emptyoffset=0;
+	if(queue->filled < queue->size / 2){
+		queue_resize(queue,queue->size/2);
+	}
 }
 
-extern inline void arraylist_print(arraylist_t * arraylist, printfn_t printfn){
+extern inline void queue_print(queue_t * queue, printfn_t printfn){
 	printf("queue [");
-	for(int i = 0; i<arraylist->filled;i++){
-		void * item = arraylist->value[i];
-		if(i != 0) {printf(",");}
+	for(int i = queue->emptyoffset; i<queue->filled;i++){
+		void * item = queue->value[i];
+		if(i != queue->emptyoffset) {printf(",");}
 		printfn(item);
 	}
 	printf("]\n");
 }
 
-extern inline void arraylist_append(arraylist_t * arraylist,void * value){
-	if(arraylist->filled >= arraylist->size){
-		arraylist_resize(arraylist,arraylist->size*2);	
+extern inline void queue_enqueue(queue_t * queue,void * value){
+	if(queue->filled >= queue->size){
+		queue_resize(queue,queue->size*2);	
 	}
-	arraylist->value[arraylist->filled] = value;
-	arraylist->filled++;
+	queue->value[queue->filled] = value;
+	queue->filled++;
 }
 
-extern inline void arraylist_insert(arraylist_t * arraylist,int index,void * value){
-	if(arraylist->filled >= arraylist->size){
-		arraylist_resize(arraylist,arraylist->size*2);	
-	}
-	for (int i = arraylist->filled; i >= index; --i){
-		arraylist->value[i+1] = arraylist->value[i];
-	}
-	arraylist->value[index] = value;
-	arraylist->filled++;
-}
-
-extern inline int arraylist_length(arraylist_t * arraylist){
-	return arraylist->filled;
+extern inline int queue_length(queue_t * queue){
+	return queue->filled-queue->emptyoffset;
 }
 
 #if DEBUG
-extern inline int arraylist_size(arraylist_t * arraylist){
-	return arraylist->size;
+extern inline int queue_size(queue_t * queue){
+	return queue->size;
 }
 #endif
 
-extern inline int arraylist_find(arraylist_t * arraylist,void * value, comparefn_t comparefn){
-	for(int i = 0; i<arraylist->filled;i++){
-		void * item = arraylist->value[i];
-		if(comparefn(item,value)) {
-			return i;
-		}
-	}
-	return -1;	
+extern inline void queue_autoclear(queue_t * queue,int autoclear){
+	queue->autoclear = autoclear;
 }
 
-extern inline bool arraylist_contains(arraylist_t * arraylist,void * value, comparefn_t comparefn){
-	return arraylist_find(arraylist,value,comparefn) != -1;
-}
+extern inline void * queue_dequeue(queue_t * queue){
+	
+	void * removed_data = queue->value[0];
+	queue->emptyoffset++;
 
-extern inline void * arraylist_delete(arraylist_t * arraylist,int index){
-	if(index < 0){
-		index = arraylist->filled + index;
+	if (queue->autoclear > 0 && queue->emptyoffset >= queue->autoclear){
+		queue_rebase(queue);
 	}
 
-	if(index > arraylist->filled || index < 0){
-		return NULL;
-	}
-
-	if(arraylist->filled < arraylist->size / 2){
-		arraylist_resize(arraylist,arraylist->size/2);
-	}
-
-	void * removed_data = arraylist->value[index];
-	for (int i = index; i < arraylist->filled-1; ++i){
-		arraylist->value[i] = arraylist->value[i+1];
-	}
-	arraylist->filled--;
 	return removed_data;
 }
 
-extern inline void * arraylist_remove(arraylist_t * arraylist,void * value, comparefn_t comparefn){
-	int index = arraylist_find(arraylist,value,comparefn);
-	if(index == -1){
-		return NULL;
-	}
-	return arraylist_delete(arraylist,index);
+extern inline void queue_free(queue_t * queue){
+	free(queue->value);
+	free(queue);
 }
 
-extern inline void arraylist_free(arraylist_t * arraylist){
-	free(arraylist->value);
-	free(arraylist);
+extern inline void queue_freeall(queue_t * queue){
+	for (int i = queue->emptyoffset; i < queue->filled; ++i){
+		free(queue->value[i]);
+	}
+	free(queue->value);
+	free(queue);
 }
 
-extern inline void arraylist_freeall(arraylist_t * arraylist){
-	for (int i = 0; i < arraylist->filled; ++i){
-		free(arraylist->value[i]);
+extern inline queue_t * queue_copy(queue_t * queue){
+	queue_t * newqueue = queue_new();
+	for(int i = queue->emptyoffset; i<queue->filled;i++){
+		void * item = queue->value[i];
+		queue_enqueue(newqueue,item);
 	}
-	free(arraylist->value);
-	free(arraylist);
-}
-
-extern inline arraylist_t * arraylist_copy(arraylist_t * arraylist){
-	arraylist_t * newlist = arraylist_new();
-	for(int i = 0; i<arraylist->filled;i++){
-		void * item = arraylist->value[i];
-		arraylist_append(newlist,item);
-	}
-	return newlist;
+	return newqueue;
 }
 
 

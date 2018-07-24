@@ -27,6 +27,10 @@ int main(){
 	int f = 8;
 	int g = 9;
 	int h = 10;
+	int i = 11;
+	int j = 12;
+	int k = 13;
+	int l = 14;
 
 	//binary tree tests
 		// binarytree_t * tree = binarytree_new();	
@@ -44,26 +48,26 @@ int main(){
 		// binarytree_free(tree);
 
 	//arraylist tests
-		// arraylist_t * list = arraylist_new();
-		// arraylist_append(list,&a);
-		// arraylist_append(list,&b);
-		// arraylist_append(list,&c);
-		// arraylist_append(list,&d);
-		// arraylist_append(list,&e);
+		// arraylist_t * arraylist = arraylist_new();
+		// arraylist_append(arraylist,&a);
+		// arraylist_append(arraylist,&b);
+		// arraylist_append(arraylist,&c);
+		// arraylist_append(arraylist,&d);
+		// arraylist_append(arraylist,&e);
 
-		// arraylist_append(list,&f);
+		// arraylist_append(arraylist,&f);
 
-		// arraylist_print(list,intprintfn);
+		// arraylist_print(arraylist,intprintfn);
 
-		// arraylist_delete(list,1);
-		// arraylist_print(list,intprintfn);
-		// arraylist_remove(list,&c,intcmpfn);
-		// arraylist_print(list,intprintfn);
+		// arraylist_delete(arraylist,1);
+		// arraylist_print(arraylist,intprintfn);
+		// arraylist_remove(arraylist,&c,intcmpfn);
+		// arraylist_print(arraylist,intprintfn);
 
-		// arraylist_insert(list,0,&c);
-		// arraylist_print(list,intprintfn);
+		// arraylist_insert(arraylist,0,&c);
+		// arraylist_print(arraylist,intprintfn);
 
-		// arraylist_free(list);
+		// arraylist_free(arraylist);
 
 	//stack tests
 		// stack_t * stack = stack_new();
@@ -82,44 +86,99 @@ int main(){
 		// stack_print(stack,intprintfn);
 		// stack_free(stack);
 
-	// (single) linked lists
-		// linkedlist_t * list = linkedlist_new();
-		// linkedlist_insert(list,0,&d);
-		// linkedlist_print(list,intprintfn);
-		// linkedlist_append(list,&a);
-		// linkedlist_print(list,intprintfn);
-		// linkedlist_append(list,&b);
-		// linkedlist_print(list,intprintfn);
-		// linkedlist_insert(list,0,&e);
-		// linkedlist_print(list,intprintfn);
-		// linkedlist_append(list,&c);
-		// linkedlist_print(list,intprintfn);
-		// linkedlist_insert(list,2,&f);
-		// linkedlist_print(list,intprintfn);
-		// linkedlist_insert(list,-2,&g);
-		// linkedlist_print(list,intprintfn);
-		// linkedlist_insert(list,-6,&h);
-		// linkedlist_print(list,intprintfn);
-		// printf("%i\n",linkedlist_length(list));
+	// // (single) linked lists
+	// 	linkedlist_t * list = linkedlist_new();
+	// 	linkedlist_insert(list,0,&d);
+	// 	linkedlist_print(list,intprintfn);
+	// 	linkedlist_append(list,&a);
+	// 	linkedlist_print(list,intprintfn);
+	// 	linkedlist_append(list,&b);
+	// 	linkedlist_print(list,intprintfn);
+	// 	linkedlist_insert(list,0,&e);
+	// 	linkedlist_print(list,intprintfn);
+	// 	linkedlist_append(list,&c);
+	// 	linkedlist_print(list,intprintfn);
+	// 	linkedlist_insert(list,2,&f);
+	// 	linkedlist_print(list,intprintfn);
+	// 	linkedlist_insert(list,-2,&g);
+	// 	linkedlist_print(list,intprintfn);
+	// 	linkedlist_insert(list,-6,&h);
+	// 	linkedlist_print(list,intprintfn);
+	// 	printf("%i\n",linkedlist_length(list));
 
-		// printf("--\n");
-		// linkedlist_print(list,intprintfn);
-		// linkedlist_delete(list,0);
-		// linkedlist_print(list,intprintfn);
-		// linkedlist_delete(list,-6);
-		// linkedlist_print(list,intprintfn);
-		// linkedlist_delete(list,-6);
-		// linkedlist_print(list,intprintfn);
-		// linkedlist_delete(list,2);
-		// linkedlist_print(list,intprintfn);
-		// linkedlist_remove(list,&b,intcmpfn);
-		// linkedlist_print(list,intprintfn);
+	// 	printf("--\n");
+	// 	linkedlist_print(list,intprintfn);
+	// 	linkedlist_delete(list,0);
+	// 	linkedlist_print(list,intprintfn);
+	// 	linkedlist_delete(list,-6);
+	// 	linkedlist_print(list,intprintfn);
+	// 	linkedlist_delete(list,-6);
+	// 	linkedlist_print(list,intprintfn);
+	// 	linkedlist_delete(list,2);
+	// 	linkedlist_print(list,intprintfn);
+	// 	linkedlist_remove(list,&b,intcmpfn);
+	// 	linkedlist_print(list,intprintfn);
 
-		// printf("%i\n",linkedlist_contains(list,&e,intcmpfn));
-		// printf("%i\n",linkedlist_contains(list,&c,intcmpfn));
-		// printf("%i\n",linkedlist_length(list));
+	// 	printf("%i\n",linkedlist_contains(list,&e,intcmpfn));
+	// 	printf("%i\n",linkedlist_contains(list,&c,intcmpfn));
+	// 	printf("%i\n",linkedlist_length(list));
 
-		// linkedlist_free(list);
+	// 	linkedlist_free(list);
 
+	//queue
+		// queue_t * queue = queue_new();
+		// queue_enqueue(queue,&a);
+		// queue_print(queue,intprintfn);
+		// queue_enqueue(queue,&b);
+		// queue_print(queue,intprintfn);
+		// queue_enqueue(queue,&c);
+		// queue_print(queue,intprintfn);
+		// queue_enqueue(queue,&d);
+		// queue_print(queue,intprintfn);
+		// queue_enqueue(queue,&e);
+		// queue_print(queue,intprintfn);
+		// queue_enqueue(queue,&f);
+		// queue_print(queue,intprintfn);
+		// queue_enqueue(queue,&g);
+		// queue_print(queue,intprintfn);
+		// queue_enqueue(queue,&h);
+		// queue_print(queue,intprintfn);
+		// queue_enqueue(queue,&i);
+		// queue_print(queue,intprintfn);
+		// queue_enqueue(queue,&j);
+		// queue_print(queue,intprintfn);
+		// queue_enqueue(queue,&k);
+		// queue_print(queue,intprintfn);
+		// queue_enqueue(queue,&l);
+		// queue_print(queue,intprintfn);
+
+		// printf("%i,%i,%i\n",queue->size,queue->filled,queue->emptyoffset);
+		// queue_dequeue(queue);
+		// queue_print(queue,intprintfn);
+		// queue_dequeue(queue);
+		// queue_print(queue,intprintfn);
+		// queue_dequeue(queue);
+		// queue_print(queue,intprintfn);
+		// queue_dequeue(queue);
+		// queue_print(queue,intprintfn);
+		// queue_dequeue(queue);
+		// queue_print(queue,intprintfn);
+		
+		// printf("%i,%i,%i\n",queue->size,queue->filled,queue->emptyoffset);
+
+		// queue_dequeue(queue);
+		// queue_print(queue,intprintfn);
+		// queue_dequeue(queue);
+		// queue_print(queue,intprintfn);
+		// queue_dequeue(queue);
+		// queue_print(queue,intprintfn);
+		// queue_dequeue(queue);
+		// queue_print(queue,intprintfn);
+		// queue_dequeue(queue);
+		// queue_print(queue,intprintfn);
+		// printf("%i,%i,%i\n",queue->size,queue->filled,queue->emptyoffset);
+		// queue_free(queue);
+
+	
 	return 0;
 }

@@ -18,9 +18,11 @@ ___
  - [ ] Dictionary
  - [ ] Set
  - [ ] Multiset
+ - [x] Queue (Single ended)
  - [ ] Queue (Double ended)
  - [ ] Tree
  - [ ] Heap
+ - [ ] Priority Queue (Single ended)
  - [ ] Priority Queue (Double ended)
  - [ ] Graph
  - [ ] String
