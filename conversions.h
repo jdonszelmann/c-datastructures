@@ -4,6 +4,9 @@
 #define CONVERSIONS_H
 
 #include "datastructures.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 //stack-arraylist
 extern inline arraylist_t * stack_toarraylist(stack_t * stack){
@@ -108,6 +111,23 @@ extern inline queue_t * stack_toqueue(stack_t * stack){
 		queue_enqueue(newqueue,item);
 	}
 	return newqueue;
+}
+
+//string-charpnt
+extern inline string_t * charpnt_tostring(char * str){
+	string_t * newstring = stack_new();
+	while(*str != '\0'){
+		char item = *str;
+		*str++;
+		arraylist_append(newstring,item);
+	}
+	return newstack;
+}
+
+extern inline char * string_tocharpnt(string_t * string){
+	char * str = malloc(1 + string->filled*sizeof(char));
+	strcpy(str,string->value);
+	return str;
 }
 
 #endif

@@ -179,6 +179,8 @@ int main(){
 		// printf("%i,%i,%i\n",queue->size,queue->filled,queue->emptyoffset);
 		// queue_free(queue);
 
-	
+	//string
+		string_t * string = string_new();
+
 	return 0;
 }

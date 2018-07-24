@@ -23,17 +23,20 @@ var searchData=
   ['string_2eh',['string.h',['../string_8h.html',1,'']]],
   ['string_5fappend',['string_append',['../string_8h.html#a4acd3723240500d90b439dc12661415d',1,'string.h']]],
   ['string_5fcontains',['string_contains',['../string_8h.html#af23f1022da32b3ec3a7d9fdc795617b8',1,'string.h']]],
+  ['string_5fcopy',['string_copy',['../string_8h.html#adb4a007fb9e300e9e0642354a0ec740b',1,'string.h']]],
   ['string_5fdelete',['string_delete',['../string_8h.html#ab9e0f3180d91b62ebb01a63b98f0b6d3',1,'string.h']]],
   ['string_5ffind',['string_find',['../string_8h.html#a0b28c6246d2d28540cd3c2869648c5fb',1,'string.h']]],
   ['string_5ffree',['string_free',['../string_8h.html#a8b16f1091818ecf0f5ba9dc5206958d6',1,'string.h']]],
-  ['string_5ffreeall',['string_freeall',['../string_8h.html#a2545977b6d0d66c461f9d1b7fa827621',1,'string.h']]],
+  ['string_5ffreeall',['string_freeall',['../string_8h.html#af66fcb14deaa729686f56aa6688c219d',1,'string.h']]],
   ['string_5fgetvalue',['string_getvalue',['../string_8h.html#a976eed1a09fe95eb34720601b967224e',1,'string.h']]],
   ['string_5finsert',['string_insert',['../string_8h.html#a52dff535067f0c0508ca352d4a620229',1,'string.h']]],
   ['string_5flength',['string_length',['../string_8h.html#a6de4d52e360d50cd034b380bdfc9818f',1,'string.h']]],
   ['string_5fnew',['string_new',['../string_8h.html#a5fe0a275d8ad9d1b486257d32be21ca1',1,'string.h']]],
   ['string_5fprint',['string_print',['../string_8h.html#a016360bcefca9b673af0bd9f0a003357',1,'string.h']]],
+  ['string_5fremove',['string_remove',['../string_8h.html#a4aef8347984006e0998c89d5944c1b01',1,'string.h']]],
   ['string_5fresize',['string_resize',['../string_8h.html#aa1acc465867856e8830dafb26bb6e4dd',1,'string.h']]],
   ['string_5fsetvalue',['string_setvalue',['../string_8h.html#adeb33b509a22a8c313de36f175e31234',1,'string.h']]],
   ['string_5fstartsize',['STRING_STARTSIZE',['../string_8h.html#a6800df32fc11eefce937c9a1e459a8af',1,'string.h']]],
-  ['string_5ft',['string_t',['../string_8h.html#a2673f10c65153ad5b955574a5a36ccb2',1,'string.h']]]
+  ['string_5ft',['string_t',['../string_8h.html#a2673f10c65153ad5b955574a5a36ccb2',1,'string.h']]],
+  ['string_5ftocharpnt',['string_tocharpnt',['../conversions_8h.html#a60da266ab8418ddba916831776326959',1,'conversions.h']]]
 ];

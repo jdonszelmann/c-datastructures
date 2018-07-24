@@ -63,9 +63,7 @@ extern inline char string_getvalue(string_t * arraylist, int index){
 }
 
 extern inline void string_print(string_t * string){
-	printf("string \"");
-	printf(string->value);
-	printf("\"\n");
+	printf("string \"%s\"\n",string->value);
 }
 
 extern inline void string_append(string_t * string,char value){
@@ -132,10 +130,10 @@ extern inline char string_delete(string_t * string,int index){
 	return removed_data;
 }
 
-extern inline char arraylist_remove(string_t * string,char value){
+extern inline char string_remove(string_t * string,char value){
 	int index = string_find(string,value);
 	if(index == -1){
-		return NULL;
+		return '\0';
 	}
 	return string_delete(string,index);
 }
@@ -144,16 +142,16 @@ extern inline void string_free(string_t * string){
 	free(string);
 }
 
-extern inline void string_freeall(string_t * string)
+extern inline void string_freeall(string_t * string){
 	free(string->value);
 	free(string);
 }
 
-extern inline string_t * arraylist_copy(string_t * string){
-	string_t * newstring = arraylist_new();
+extern inline string_t * string_copy(string_t * string){
+	string_t * newstring = string_new();
 	for(int i = 0; i<string->filled;i++){
 		char item = string->value[i];
-		arraylist_append(newstring,item);
+		string_append(newstring,item);
 	}
 	return newstring;
 }

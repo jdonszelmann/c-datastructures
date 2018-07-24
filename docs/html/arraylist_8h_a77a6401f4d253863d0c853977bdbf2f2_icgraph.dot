@@ -1,0 +1,15 @@
+digraph "arraylist_copy"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node20 [label="arraylist_copy",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node20 -> Node21 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node21 [label="stack_toarraylist",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$conversions_8h.html#aeb66bbc014dfd7dfe9101c32aaedbbf5",tooltip=" "];
+  Node20 -> Node22 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node22 [label="arraylist_tostack",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$conversions_8h.html#a1a4247b27711ece2b0d5a5376a5efefd",tooltip=" "];
+  Node20 -> Node23 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node23 [label="stack_copy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$stack_8h.html#afab0083672c095c41e8ffc705f72f36f",tooltip=" "];
+}

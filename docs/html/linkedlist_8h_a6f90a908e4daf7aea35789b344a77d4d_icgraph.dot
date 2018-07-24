@@ -1,0 +1,22 @@
+digraph "linkedlist_link_new"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node61 [label="linkedlist_link_new",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node61 -> Node62 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node62 [label="linkedlist_append",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$linkedlist_8h.html#a0d9503a42d93b5117f220cb0767a9d0a",tooltip=" "];
+  Node62 -> Node63 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node63 [label="arraylist_tolinkedlist",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$conversions_8h.html#a165cf73b0e2f7d0e2fa446db6eeae5b7",tooltip=" "];
+  Node62 -> Node64 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node64 [label="stack_tolinkedlist",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$conversions_8h.html#a20f9b3d175e3a2e4542cfc6ce419d738",tooltip=" "];
+  Node62 -> Node65 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node65 [label="queue_tolinkedlist",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$conversions_8h.html#a476210bc63859e52b4ede0be00610ca6",tooltip=" "];
+  Node62 -> Node66 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node66 [label="linkedlist_insert",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$linkedlist_8h.html#ab5209fd6cd52ac339f1d35416c63e0c3",tooltip=" "];
+  Node62 -> Node67 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node67 [label="linkedlist_link_copy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$linkedlist_8h.html#a20ce7ceadf38ef5d7ff23933f2666029",tooltip=" "];
+  Node61 -> Node66 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}
