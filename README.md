@@ -25,4 +25,4 @@ ___
  - [ ] Priority Queue (Single ended)
  - [ ] Priority Queue (Double ended)
  - [ ] Graph
- - [ ] String
+ - [x] String
