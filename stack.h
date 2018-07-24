@@ -16,11 +16,21 @@ typedef struct stack{
 }stack_t;
 
 extern inline stack_t * stack_new(){
-	stack_t * s = malloc(sizeof(stack_t));
-	*s = (stack_t){
+	stack_t * stack = malloc(sizeof(stack_t));
+	*stack = (stack_t){
 		arraylist_new(),
 	};
-	return s;
+	return stack;
+}
+
+
+extern inline stack_t * stack_copy(stack_t * stack){
+	stack_t * newstack = malloc(sizeof(stack_t));
+	*newstack = (stack_t){
+		arraylist_copy(stack->data),
+	};
+	return newstack;
+
 }
 
 extern inline void stack_push(stack_t * stack, void * value){

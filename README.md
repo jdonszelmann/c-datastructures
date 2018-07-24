@@ -23,3 +23,4 @@ ___
  - [ ] Heap
  - [ ] Priority Queue (Double ended)
  - [ ] Graph
+ - [ ] String

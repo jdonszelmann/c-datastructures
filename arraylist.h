@@ -159,6 +159,14 @@ extern inline void arraylist_freeall(arraylist_t * arraylist){
 	free(arraylist);
 }
 
+extern inline arraylist_t * arraylist_copy(arraylist_t * arraylist){
+	arraylist_t * newlist = arraylist_new();
+	for(int i = 0; i<arraylist->filled;i++){
+		void * item = arraylist->value[i];
+		arraylist_append(newlist,item);
+	}
+	return newlist;
+}
 
 
 #endif
