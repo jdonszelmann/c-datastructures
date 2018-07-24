@@ -75,7 +75,7 @@ $(function() {
 <code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
 <code>#include &lt;stdbool.h&gt;</code><br />
-<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="string_8h_source.html">string.h</a>&gt;</code><br />
 <code>#include &quot;<a class="el" href="datastructures_8h_source.html">datastructures.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="types_8h_source.html">types.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
@@ -83,17 +83,18 @@ Include dependency graph for stack.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="stack_8h__incl.png" border="0" usemap="#stack_8h" alt=""/></div>
 <map name="stack_8h" id="stack_8h">
-<area shape="rect" id="node1" title=" " alt="" coords="197,5,262,32"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,229,67,256"/>
-<area shape="rect" id="node3" title=" " alt="" coords="91,229,157,256"/>
-<area shape="rect" id="node4" title=" " alt="" coords="181,229,245,256"/>
-<area shape="rect" id="node5" title=" " alt="" coords="360,229,435,256"/>
-<area shape="rect" id="node6" title=" " alt="" coords="270,229,335,256"/>
-<area shape="rect" id="node7" href="datastructures_8h.html" title=" " alt="" coords="171,80,287,107"/>
-<area shape="rect" id="node9" href="types_8h.html" title=" " alt="" coords="459,229,525,256"/>
-<area shape="rect" id="node8" href="bintree_8h.html" title=" " alt="" coords="293,155,365,181"/>
-<area shape="rect" id="node10" href="arraylist_8h.html" title=" " alt="" coords="190,155,269,181"/>
-<area shape="rect" id="node11" href="linkedlist_8h.html" title=" " alt="" coords="82,155,166,181"/>
+<area shape="rect" id="node1" title=" " alt="" coords="242,5,307,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="69,229,131,256"/>
+<area shape="rect" id="node3" title=" " alt="" coords="155,229,221,256"/>
+<area shape="rect" id="node4" title=" " alt="" coords="245,229,309,256"/>
+<area shape="rect" id="node5" title=" " alt="" coords="333,229,408,256"/>
+<area shape="rect" id="node6" href="string_8h.html" title=" " alt="" coords="433,229,498,256"/>
+<area shape="rect" id="node7" href="datastructures_8h.html" title=" " alt="" coords="217,80,333,107"/>
+<area shape="rect" id="node9" href="types_8h.html" title=" " alt="" coords="522,229,587,256"/>
+<area shape="rect" id="node8" href="bintree_8h.html" title=" " alt="" coords="395,155,467,181"/>
+<area shape="rect" id="node10" href="arraylist_8h.html" title=" " alt="" coords="183,155,262,181"/>
+<area shape="rect" id="node11" href="linkedlist_8h.html" title=" " alt="" coords="286,155,370,181"/>
+<area shape="rect" id="node12" href="conversions_8h.html" title=" " alt="" coords="57,155,159,181"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -101,11 +102,13 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="stack_8h__dep__incl.png" border="0" usemap="#stack_8hdep" alt=""/></div>
 <map name="stack_8hdep" id="stack_8hdep">
-<area shape="rect" id="node1" title=" " alt="" coords="112,5,177,32"/>
-<area shape="rect" id="node2" href="datastructures_8h.html" title=" " alt="" coords="87,80,203,107"/>
+<area shape="rect" id="node1" title=" " alt="" coords="215,5,280,32"/>
+<area shape="rect" id="node2" href="datastructures_8h.html" title=" " alt="" coords="189,80,305,107"/>
 <area shape="rect" id="node3" href="arraylist_8h.html" title=" " alt="" coords="5,155,84,181"/>
 <area shape="rect" id="node4" href="bintree_8h.html" title=" " alt="" coords="109,155,181,181"/>
-<area shape="rect" id="node5" href="main_8c.html" title=" " alt="" coords="205,155,266,181"/>
+<area shape="rect" id="node5" href="linkedlist_8h.html" title=" " alt="" coords="205,155,289,181"/>
+<area shape="rect" id="node6" href="conversions_8h.html" title=" " alt="" coords="313,155,416,181"/>
+<area shape="rect" id="node7" href="main_8c.html" title=" " alt="" coords="441,155,502,181"/>
 </map>
 </div>
 </div>
@@ -125,6 +128,8 @@ Typedefs</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a47b5ad020d9e838d4fc7923463c090ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stack_8h.html#a4626fc2f61bed7e5faec5b4f459a02f7">stack_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stack_8h.html#a47b5ad020d9e838d4fc7923463c090ec">stack_new</a> ()</td></tr>
 <tr class="separator:a47b5ad020d9e838d4fc7923463c090ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afab0083672c095c41e8ffc705f72f36f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stack_8h.html#a4626fc2f61bed7e5faec5b4f459a02f7">stack_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stack_8h.html#afab0083672c095c41e8ffc705f72f36f">stack_copy</a> (<a class="el" href="stack_8h.html#a4626fc2f61bed7e5faec5b4f459a02f7">stack_t</a> *<a class="el" href="structstack.html">stack</a>)</td></tr>
+<tr class="separator:afab0083672c095c41e8ffc705f72f36f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a065fbd67e3a480eeb3150db6193734cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stack_8h.html#a065fbd67e3a480eeb3150db6193734cb">stack_push</a> (<a class="el" href="stack_8h.html#a4626fc2f61bed7e5faec5b4f459a02f7">stack_t</a> *<a class="el" href="structstack.html">stack</a>, void *value)</td></tr>
 <tr class="separator:a065fbd67e3a480eeb3150db6193734cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada2d46ded21cd4daf6bdee28a869234a"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stack_8h.html#ada2d46ded21cd4daf6bdee28a869234a">stack_pop</a> (<a class="el" href="stack_8h.html#a4626fc2f61bed7e5faec5b4f459a02f7">stack_t</a> *<a class="el" href="structstack.html">stack</a>)</td></tr>
@@ -160,6 +165,44 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="afab0083672c095c41e8ffc705f72f36f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afab0083672c095c41e8ffc705f72f36f">&#9670;&nbsp;</a></span>stack_copy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="stack_8h.html#a4626fc2f61bed7e5faec5b4f459a02f7">stack_t</a>* stack_copy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="stack_8h.html#a4626fc2f61bed7e5faec5b4f459a02f7">stack_t</a> *&#160;</td>
+          <td class="paramname"><em>stack</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="stack_8h_afab0083672c095c41e8ffc705f72f36f_cgraph.png" border="0" usemap="#stack_8h_afab0083672c095c41e8ffc705f72f36f_cgraph" alt=""/></div>
+<map name="stack_8h_afab0083672c095c41e8ffc705f72f36f_cgraph" id="stack_8h_afab0083672c095c41e8ffc705f72f36f_cgraph">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,95,57"/>
+<area shape="rect" id="node2" href="arraylist_8h.html#a77a6401f4d253863d0c853977bdbf2f2" title=" " alt="" coords="143,31,245,57"/>
+<area shape="rect" id="node3" href="arraylist_8h.html#a0f3dce9a4ff6eec624a885cab52d5cb1" title=" " alt="" coords="303,5,401,32"/>
+<area shape="rect" id="node4" href="arraylist_8h.html#ac567053ff89cc5cae2050d9a7a844c6a" title=" " alt="" coords="293,56,411,83"/>
+<area shape="rect" id="node5" href="arraylist_8h.html#a6d47af225b71d94985c9ceca938e7890" title=" " alt="" coords="459,56,569,83"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="af74c8942367bf2d55c00e0f123bafc7d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af74c8942367bf2d55c00e0f123bafc7d">&#9670;&nbsp;</a></span>stack_empty()</h2>
 
@@ -285,6 +328,15 @@ Here is the call graph for this function:</div>
 <map name="stack_8h_a47b5ad020d9e838d4fc7923463c090ec_cgraph" id="stack_8h_a47b5ad020d9e838d4fc7923463c090ec_cgraph">
 <area shape="rect" id="node1" title=" " alt="" coords="5,5,91,32"/>
 <area shape="rect" id="node2" href="arraylist_8h.html#a0f3dce9a4ff6eec624a885cab52d5cb1" title=" " alt="" coords="139,5,237,32"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="stack_8h_a47b5ad020d9e838d4fc7923463c090ec_icgraph.png" border="0" usemap="#stack_8h_a47b5ad020d9e838d4fc7923463c090ec_icgraph" alt=""/></div>
+<map name="stack_8h_a47b5ad020d9e838d4fc7923463c090ec_icgraph" id="stack_8h_a47b5ad020d9e838d4fc7923463c090ec_icgraph">
+<area shape="rect" id="node1" title=" " alt="" coords="176,5,261,32"/>
+<area shape="rect" id="node2" href="conversions_8h.html#a9ce143cef9650633637b0d6dac7d148f" title=" " alt="" coords="5,5,128,32"/>
 </map>
 </div>
 
@@ -546,7 +598,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 24 2018 01:05:30 for C Datastructures by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 24 2018 11:01:41 for C Datastructures by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>
