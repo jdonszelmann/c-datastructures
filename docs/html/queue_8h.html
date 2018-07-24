@@ -63,16 +63,694 @@ $(function() {
 
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">queue.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;stdbool.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="string_8h_source.html">string.h</a>&gt;</code><br />
+<code>#include &quot;<a class="el" href="datastructures_8h_source.html">datastructures.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="types_8h_source.html">types.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for queue.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="queue_8h__incl.png" border="0" usemap="#queue_8h" alt=""/></div>
+<map name="queue_8h" id="queue_8h">
+<area shape="rect" id="node1" title=" " alt="" coords="288,5,356,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="114,229,175,256"/>
+<area shape="rect" id="node3" title=" " alt="" coords="200,229,265,256"/>
+<area shape="rect" id="node4" title=" " alt="" coords="290,229,354,256"/>
+<area shape="rect" id="node5" title=" " alt="" coords="378,229,452,256"/>
+<area shape="rect" id="node6" href="string_8h.html" title=" " alt="" coords="477,229,542,256"/>
+<area shape="rect" id="node7" href="datastructures_8h.html" title=" " alt="" coords="264,80,380,107"/>
+<area shape="rect" id="node9" href="types_8h.html" title=" " alt="" coords="566,229,632,256"/>
+<area shape="rect" id="node8" href="bintree_8h.html" title=" " alt="" coords="379,155,451,181"/>
+<area shape="rect" id="node10" href="arraylist_8h.html" title=" " alt="" coords="186,155,265,181"/>
+<area shape="rect" id="node11" href="stack_8h.html" title=" " alt="" coords="289,155,354,181"/>
+<area shape="rect" id="node12" href="linkedlist_8h.html" title=" " alt="" coords="476,155,560,181"/>
+<area shape="rect" id="node13" href="conversions_8h.html" title=" " alt="" coords="60,155,162,181"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+This graph shows which files directly or indirectly include this file:</div>
+<div class="dyncontent">
+<div class="center"><img src="queue_8h__dep__incl.png" border="0" usemap="#queue_8hdep" alt=""/></div>
+<map name="queue_8hdep" id="queue_8hdep">
+<area shape="rect" id="node1" title=" " alt="" coords="204,5,272,32"/>
+<area shape="rect" id="node2" href="datastructures_8h.html" title=" " alt="" coords="180,80,296,107"/>
+<area shape="rect" id="node3" href="arraylist_8h.html" title=" " alt="" coords="5,155,84,181"/>
+<area shape="rect" id="node4" href="bintree_8h.html" title=" " alt="" coords="109,155,181,181"/>
+<area shape="rect" id="node5" href="stack_8h.html" title=" " alt="" coords="205,155,271,181"/>
+<area shape="rect" id="node6" href="linkedlist_8h.html" title=" " alt="" coords="295,155,379,181"/>
+<area shape="rect" id="node7" href="conversions_8h.html" title=" " alt="" coords="403,155,505,181"/>
+<area shape="rect" id="node8" href="main_8c.html" title=" " alt="" coords="530,155,591,181"/>
+</map>
+</div>
+</div>
 <p><a href="queue_8h_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structqueue.html">queue</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a35a3ff30fd69e06769ca77b28d4796ba"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8h.html#a35a3ff30fd69e06769ca77b28d4796ba">QUEUE_STARTSIZE</a>&#160;&#160;&#160;10</td></tr>
+<tr class="separator:a35a3ff30fd69e06769ca77b28d4796ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:aa8acf648f3b0c69d7e132fcc61dc58c7"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structqueue.html">queue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8h.html#aa8acf648f3b0c69d7e132fcc61dc58c7">queue_t</a></td></tr>
+<tr class="separator:aa8acf648f3b0c69d7e132fcc61dc58c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a217fbe3b1f9577519fd427b2dd1d3455"><td class="memItemLeft" align="right" valign="top"><a class="el" href="queue_8h.html#aa8acf648f3b0c69d7e132fcc61dc58c7">queue_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8h.html#a217fbe3b1f9577519fd427b2dd1d3455">queue_new</a> ()</td></tr>
+<tr class="separator:a217fbe3b1f9577519fd427b2dd1d3455"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1e22edbea22f745b5510ce73ef3b869"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8h.html#ad1e22edbea22f745b5510ce73ef3b869">queue_resize</a> (<a class="el" href="arraylist_8h.html#a26dafc54c0552d50e2af4092975694f5">arraylist_t</a> *<a class="el" href="structarraylist.html">arraylist</a>, int newsize)</td></tr>
+<tr class="separator:ad1e22edbea22f745b5510ce73ef3b869"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac68e7fb676a96c51e42abd4ab9b7b0b3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8h.html#ac68e7fb676a96c51e42abd4ab9b7b0b3">queue_rebase</a> (<a class="el" href="arraylist_8h.html#a26dafc54c0552d50e2af4092975694f5">arraylist_t</a> *<a class="el" href="structarraylist.html">arraylist</a>)</td></tr>
+<tr class="separator:ac68e7fb676a96c51e42abd4ab9b7b0b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ae47fa39e533bc85611302eea3a008a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8h.html#a0ae47fa39e533bc85611302eea3a008a">arraylist_print</a> (<a class="el" href="arraylist_8h.html#a26dafc54c0552d50e2af4092975694f5">arraylist_t</a> *<a class="el" href="structarraylist.html">arraylist</a>, <a class="el" href="types_8h.html#a06d836e104988fed0461b03319344b02">printfn_t</a> printfn)</td></tr>
+<tr class="separator:a0ae47fa39e533bc85611302eea3a008a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac567053ff89cc5cae2050d9a7a844c6a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8h.html#ac567053ff89cc5cae2050d9a7a844c6a">arraylist_append</a> (<a class="el" href="arraylist_8h.html#a26dafc54c0552d50e2af4092975694f5">arraylist_t</a> *<a class="el" href="structarraylist.html">arraylist</a>, void *value)</td></tr>
+<tr class="separator:ac567053ff89cc5cae2050d9a7a844c6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dc3be524204c177002a42e3cf72c6cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8h.html#a7dc3be524204c177002a42e3cf72c6cd">arraylist_insert</a> (<a class="el" href="arraylist_8h.html#a26dafc54c0552d50e2af4092975694f5">arraylist_t</a> *<a class="el" href="structarraylist.html">arraylist</a>, int index, void *value)</td></tr>
+<tr class="separator:a7dc3be524204c177002a42e3cf72c6cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ecda21b49ec9732df18a28505fef32a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8h.html#a0ecda21b49ec9732df18a28505fef32a">arraylist_length</a> (<a class="el" href="arraylist_8h.html#a26dafc54c0552d50e2af4092975694f5">arraylist_t</a> *<a class="el" href="structarraylist.html">arraylist</a>)</td></tr>
+<tr class="separator:a0ecda21b49ec9732df18a28505fef32a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19f041712fa11268d9939ec59687be6e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8h.html#a19f041712fa11268d9939ec59687be6e">arraylist_find</a> (<a class="el" href="arraylist_8h.html#a26dafc54c0552d50e2af4092975694f5">arraylist_t</a> *<a class="el" href="structarraylist.html">arraylist</a>, void *value, <a class="el" href="types_8h.html#a6eb913185d0534a960d9798cfe7b0f08">comparefn_t</a> comparefn)</td></tr>
+<tr class="separator:a19f041712fa11268d9939ec59687be6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3875bfb01ab2691ab4e26b7faebfe814"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8h.html#a3875bfb01ab2691ab4e26b7faebfe814">arraylist_contains</a> (<a class="el" href="arraylist_8h.html#a26dafc54c0552d50e2af4092975694f5">arraylist_t</a> *<a class="el" href="structarraylist.html">arraylist</a>, void *value, <a class="el" href="types_8h.html#a6eb913185d0534a960d9798cfe7b0f08">comparefn_t</a> comparefn)</td></tr>
+<tr class="separator:a3875bfb01ab2691ab4e26b7faebfe814"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31d5ded3b02e6c86120565ea127a8235"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8h.html#a31d5ded3b02e6c86120565ea127a8235">arraylist_delete</a> (<a class="el" href="arraylist_8h.html#a26dafc54c0552d50e2af4092975694f5">arraylist_t</a> *<a class="el" href="structarraylist.html">arraylist</a>, int index)</td></tr>
+<tr class="separator:a31d5ded3b02e6c86120565ea127a8235"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22aeeb47116363fb6733341e36bfd829"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8h.html#a22aeeb47116363fb6733341e36bfd829">arraylist_remove</a> (<a class="el" href="arraylist_8h.html#a26dafc54c0552d50e2af4092975694f5">arraylist_t</a> *<a class="el" href="structarraylist.html">arraylist</a>, void *value, <a class="el" href="types_8h.html#a6eb913185d0534a960d9798cfe7b0f08">comparefn_t</a> comparefn)</td></tr>
+<tr class="separator:a22aeeb47116363fb6733341e36bfd829"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a029193533ec293e003a5f178a48d1215"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8h.html#a029193533ec293e003a5f178a48d1215">arraylist_free</a> (<a class="el" href="arraylist_8h.html#a26dafc54c0552d50e2af4092975694f5">arraylist_t</a> *<a class="el" href="structarraylist.html">arraylist</a>)</td></tr>
+<tr class="separator:a029193533ec293e003a5f178a48d1215"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52c3b08d3711ddeb1b4b9009eb9fcacf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8h.html#a52c3b08d3711ddeb1b4b9009eb9fcacf">arraylist_freeall</a> (<a class="el" href="arraylist_8h.html#a26dafc54c0552d50e2af4092975694f5">arraylist_t</a> *<a class="el" href="structarraylist.html">arraylist</a>)</td></tr>
+<tr class="separator:a52c3b08d3711ddeb1b4b9009eb9fcacf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77a6401f4d253863d0c853977bdbf2f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="arraylist_8h.html#a26dafc54c0552d50e2af4092975694f5">arraylist_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8h.html#a77a6401f4d253863d0c853977bdbf2f2">arraylist_copy</a> (<a class="el" href="arraylist_8h.html#a26dafc54c0552d50e2af4092975694f5">arraylist_t</a> *<a class="el" href="structarraylist.html">arraylist</a>)</td></tr>
+<tr class="separator:a77a6401f4d253863d0c853977bdbf2f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a35a3ff30fd69e06769ca77b28d4796ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35a3ff30fd69e06769ca77b28d4796ba">&#9670;&nbsp;</a></span>QUEUE_STARTSIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define QUEUE_STARTSIZE&#160;&#160;&#160;10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="aa8acf648f3b0c69d7e132fcc61dc58c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8acf648f3b0c69d7e132fcc61dc58c7">&#9670;&nbsp;</a></span>queue_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structqueue.html">queue</a> <a class="el" href="queue_8h.html#aa8acf648f3b0c69d7e132fcc61dc58c7">queue_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ac567053ff89cc5cae2050d9a7a844c6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac567053ff89cc5cae2050d9a7a844c6a">&#9670;&nbsp;</a></span>arraylist_append()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void arraylist_append </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="arraylist_8h.html#a26dafc54c0552d50e2af4092975694f5">arraylist_t</a> *&#160;</td>
+          <td class="paramname"><em>arraylist</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="queue_8h_ac567053ff89cc5cae2050d9a7a844c6a_cgraph.png" border="0" usemap="#queue_8h_ac567053ff89cc5cae2050d9a7a844c6a_cgraph" alt=""/></div>
+<map name="queue_8h_ac567053ff89cc5cae2050d9a7a844c6a_cgraph" id="queue_8h_ac567053ff89cc5cae2050d9a7a844c6a_cgraph">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,123,32"/>
+<area shape="rect" id="node2" href="arraylist_8h.html#a6d47af225b71d94985c9ceca938e7890" title=" " alt="" coords="171,5,281,32"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="queue_8h_ac567053ff89cc5cae2050d9a7a844c6a_icgraph.png" border="0" usemap="#queue_8h_ac567053ff89cc5cae2050d9a7a844c6a_icgraph" alt=""/></div>
+<map name="queue_8h_ac567053ff89cc5cae2050d9a7a844c6a_icgraph" id="queue_8h_ac567053ff89cc5cae2050d9a7a844c6a_icgraph">
+<area shape="rect" id="node1" title=" " alt="" coords="156,5,273,32"/>
+<area shape="rect" id="node2" href="queue_8h.html#a77a6401f4d253863d0c853977bdbf2f2" title=" " alt="" coords="5,5,108,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3875bfb01ab2691ab4e26b7faebfe814"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3875bfb01ab2691ab4e26b7faebfe814">&#9670;&nbsp;</a></span>arraylist_contains()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool arraylist_contains </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="arraylist_8h.html#a26dafc54c0552d50e2af4092975694f5">arraylist_t</a> *&#160;</td>
+          <td class="paramname"><em>arraylist</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a6eb913185d0534a960d9798cfe7b0f08">comparefn_t</a>&#160;</td>
+          <td class="paramname"><em>comparefn</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="queue_8h_a3875bfb01ab2691ab4e26b7faebfe814_cgraph.png" border="0" usemap="#queue_8h_a3875bfb01ab2691ab4e26b7faebfe814_cgraph" alt=""/></div>
+<map name="queue_8h_a3875bfb01ab2691ab4e26b7faebfe814_cgraph" id="queue_8h_a3875bfb01ab2691ab4e26b7faebfe814_cgraph">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,129,32"/>
+<area shape="rect" id="node2" href="queue_8h.html#a19f041712fa11268d9939ec59687be6e" title=" " alt="" coords="177,5,273,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a77a6401f4d253863d0c853977bdbf2f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77a6401f4d253863d0c853977bdbf2f2">&#9670;&nbsp;</a></span>arraylist_copy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="arraylist_8h.html#a26dafc54c0552d50e2af4092975694f5">arraylist_t</a>* arraylist_copy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="arraylist_8h.html#a26dafc54c0552d50e2af4092975694f5">arraylist_t</a> *&#160;</td>
+          <td class="paramname"><em>arraylist</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="queue_8h_a77a6401f4d253863d0c853977bdbf2f2_cgraph.png" border="0" usemap="#queue_8h_a77a6401f4d253863d0c853977bdbf2f2_cgraph" alt=""/></div>
+<map name="queue_8h_a77a6401f4d253863d0c853977bdbf2f2_cgraph" id="queue_8h_a77a6401f4d253863d0c853977bdbf2f2_cgraph">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,108,57"/>
+<area shape="rect" id="node2" href="arraylist_8h.html#a0f3dce9a4ff6eec624a885cab52d5cb1" title=" " alt="" coords="165,5,264,32"/>
+<area shape="rect" id="node3" href="queue_8h.html#ac567053ff89cc5cae2050d9a7a844c6a" title=" " alt="" coords="156,56,273,83"/>
+<area shape="rect" id="node4" href="arraylist_8h.html#a6d47af225b71d94985c9ceca938e7890" title=" " alt="" coords="321,56,432,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a31d5ded3b02e6c86120565ea127a8235"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31d5ded3b02e6c86120565ea127a8235">&#9670;&nbsp;</a></span>arraylist_delete()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* arraylist_delete </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="arraylist_8h.html#a26dafc54c0552d50e2af4092975694f5">arraylist_t</a> *&#160;</td>
+          <td class="paramname"><em>arraylist</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="queue_8h_a31d5ded3b02e6c86120565ea127a8235_cgraph.png" border="0" usemap="#queue_8h_a31d5ded3b02e6c86120565ea127a8235_cgraph" alt=""/></div>
+<map name="queue_8h_a31d5ded3b02e6c86120565ea127a8235_cgraph" id="queue_8h_a31d5ded3b02e6c86120565ea127a8235_cgraph">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,116,32"/>
+<area shape="rect" id="node2" href="arraylist_8h.html#a6d47af225b71d94985c9ceca938e7890" title=" " alt="" coords="164,5,275,32"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="queue_8h_a31d5ded3b02e6c86120565ea127a8235_icgraph.png" border="0" usemap="#queue_8h_a31d5ded3b02e6c86120565ea127a8235_icgraph" alt=""/></div>
+<map name="queue_8h_a31d5ded3b02e6c86120565ea127a8235_icgraph" id="queue_8h_a31d5ded3b02e6c86120565ea127a8235_icgraph">
+<area shape="rect" id="node1" title=" " alt="" coords="172,5,283,32"/>
+<area shape="rect" id="node2" href="queue_8h.html#a22aeeb47116363fb6733341e36bfd829" title=" " alt="" coords="5,5,124,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a19f041712fa11268d9939ec59687be6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19f041712fa11268d9939ec59687be6e">&#9670;&nbsp;</a></span>arraylist_find()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int arraylist_find </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="arraylist_8h.html#a26dafc54c0552d50e2af4092975694f5">arraylist_t</a> *&#160;</td>
+          <td class="paramname"><em>arraylist</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a6eb913185d0534a960d9798cfe7b0f08">comparefn_t</a>&#160;</td>
+          <td class="paramname"><em>comparefn</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="queue_8h_a19f041712fa11268d9939ec59687be6e_icgraph.png" border="0" usemap="#queue_8h_a19f041712fa11268d9939ec59687be6e_icgraph" alt=""/></div>
+<map name="queue_8h_a19f041712fa11268d9939ec59687be6e_icgraph" id="queue_8h_a19f041712fa11268d9939ec59687be6e_icgraph">
+<area shape="rect" id="node1" title=" " alt="" coords="177,31,273,57"/>
+<area shape="rect" id="node2" href="queue_8h.html#a3875bfb01ab2691ab4e26b7faebfe814" title=" " alt="" coords="5,5,129,32"/>
+<area shape="rect" id="node3" href="queue_8h.html#a22aeeb47116363fb6733341e36bfd829" title=" " alt="" coords="8,56,127,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a029193533ec293e003a5f178a48d1215"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a029193533ec293e003a5f178a48d1215">&#9670;&nbsp;</a></span>arraylist_free()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void arraylist_free </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="arraylist_8h.html#a26dafc54c0552d50e2af4092975694f5">arraylist_t</a> *&#160;</td>
+          <td class="paramname"><em>arraylist</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a52c3b08d3711ddeb1b4b9009eb9fcacf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52c3b08d3711ddeb1b4b9009eb9fcacf">&#9670;&nbsp;</a></span>arraylist_freeall()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void arraylist_freeall </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="arraylist_8h.html#a26dafc54c0552d50e2af4092975694f5">arraylist_t</a> *&#160;</td>
+          <td class="paramname"><em>arraylist</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7dc3be524204c177002a42e3cf72c6cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7dc3be524204c177002a42e3cf72c6cd">&#9670;&nbsp;</a></span>arraylist_insert()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void arraylist_insert </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="arraylist_8h.html#a26dafc54c0552d50e2af4092975694f5">arraylist_t</a> *&#160;</td>
+          <td class="paramname"><em>arraylist</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="queue_8h_a7dc3be524204c177002a42e3cf72c6cd_cgraph.png" border="0" usemap="#queue_8h_a7dc3be524204c177002a42e3cf72c6cd_cgraph" alt=""/></div>
+<map name="queue_8h_a7dc3be524204c177002a42e3cf72c6cd_cgraph" id="queue_8h_a7dc3be524204c177002a42e3cf72c6cd_cgraph">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,112,32"/>
+<area shape="rect" id="node2" href="arraylist_8h.html#a6d47af225b71d94985c9ceca938e7890" title=" " alt="" coords="160,5,271,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0ecda21b49ec9732df18a28505fef32a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ecda21b49ec9732df18a28505fef32a">&#9670;&nbsp;</a></span>arraylist_length()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int arraylist_length </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="arraylist_8h.html#a26dafc54c0552d50e2af4092975694f5">arraylist_t</a> *&#160;</td>
+          <td class="paramname"><em>arraylist</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0ae47fa39e533bc85611302eea3a008a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ae47fa39e533bc85611302eea3a008a">&#9670;&nbsp;</a></span>arraylist_print()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void arraylist_print </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="arraylist_8h.html#a26dafc54c0552d50e2af4092975694f5">arraylist_t</a> *&#160;</td>
+          <td class="paramname"><em>arraylist</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a06d836e104988fed0461b03319344b02">printfn_t</a>&#160;</td>
+          <td class="paramname"><em>printfn</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a22aeeb47116363fb6733341e36bfd829"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22aeeb47116363fb6733341e36bfd829">&#9670;&nbsp;</a></span>arraylist_remove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* arraylist_remove </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="arraylist_8h.html#a26dafc54c0552d50e2af4092975694f5">arraylist_t</a> *&#160;</td>
+          <td class="paramname"><em>arraylist</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a6eb913185d0534a960d9798cfe7b0f08">comparefn_t</a>&#160;</td>
+          <td class="paramname"><em>comparefn</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="queue_8h_a22aeeb47116363fb6733341e36bfd829_cgraph.png" border="0" usemap="#queue_8h_a22aeeb47116363fb6733341e36bfd829_cgraph" alt=""/></div>
+<map name="queue_8h_a22aeeb47116363fb6733341e36bfd829_cgraph" id="queue_8h_a22aeeb47116363fb6733341e36bfd829_cgraph">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,124,57"/>
+<area shape="rect" id="node2" href="queue_8h.html#a19f041712fa11268d9939ec59687be6e" title=" " alt="" coords="179,5,275,32"/>
+<area shape="rect" id="node3" href="queue_8h.html#a31d5ded3b02e6c86120565ea127a8235" title=" " alt="" coords="172,56,283,83"/>
+<area shape="rect" id="node4" href="arraylist_8h.html#a6d47af225b71d94985c9ceca938e7890" title=" " alt="" coords="331,56,441,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a217fbe3b1f9577519fd427b2dd1d3455"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a217fbe3b1f9577519fd427b2dd1d3455">&#9670;&nbsp;</a></span>queue_new()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="queue_8h.html#aa8acf648f3b0c69d7e132fcc61dc58c7">queue_t</a>* queue_new </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac68e7fb676a96c51e42abd4ab9b7b0b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac68e7fb676a96c51e42abd4ab9b7b0b3">&#9670;&nbsp;</a></span>queue_rebase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void queue_rebase </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="arraylist_8h.html#a26dafc54c0552d50e2af4092975694f5">arraylist_t</a> *&#160;</td>
+          <td class="paramname"><em>arraylist</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad1e22edbea22f745b5510ce73ef3b869"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1e22edbea22f745b5510ce73ef3b869">&#9670;&nbsp;</a></span>queue_resize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void queue_resize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="arraylist_8h.html#a26dafc54c0552d50e2af4092975694f5">arraylist_t</a> *&#160;</td>
+          <td class="paramname"><em>arraylist</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>newsize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 24 2018 11:01:41 for C Datastructures by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 24 2018 11:25:03 for C Datastructures by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

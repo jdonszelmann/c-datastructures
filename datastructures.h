@@ -9,6 +9,7 @@
 #include "arraylist.h"
 #include "stack.h"
 #include "linkedlist.h"
+#include "queue.h"
 #include "conversions.h"
 
 #endif

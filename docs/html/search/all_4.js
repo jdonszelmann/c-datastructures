@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['filled',['filled',['../structarraylist.html#a57e7eb4eab95fa36b9981ba1b4515bf8',1,'arraylist']]],
-  ['foreach',['foreach',['../linkedlist_8h.html#af8ab59a9f3a4cb82ec59bbc564720bc7',1,'linkedlist.h']]]
+  ['emptyoffset',['emptyoffset',['../structqueue.html#a6c3e7c6ec6711821b695e37ddba3e3e5',1,'queue']]]
 ];
