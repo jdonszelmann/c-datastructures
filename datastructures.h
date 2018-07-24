@@ -11,5 +11,6 @@
 #include "linkedlist.h"
 #include "queue.h"
 #include "conversions.h"
+#include "string.h"
 
 #endif

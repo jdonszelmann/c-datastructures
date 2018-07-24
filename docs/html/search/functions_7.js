@@ -1,17 +1,17 @@
 var searchData=
 [
-  ['stack_5fcopy',['stack_copy',['../stack_8h.html#afab0083672c095c41e8ffc705f72f36f',1,'stack.h']]],
-  ['stack_5fempty',['stack_empty',['../stack_8h.html#af74c8942367bf2d55c00e0f123bafc7d',1,'stack.h']]],
-  ['stack_5ffree',['stack_free',['../stack_8h.html#a362c99093288b5fc1016951679a8be78',1,'stack.h']]],
-  ['stack_5ffreeall',['stack_freeall',['../stack_8h.html#a7a538e1272753b82cfc1b2181be556ef',1,'stack.h']]],
-  ['stack_5fnew',['stack_new',['../stack_8h.html#a47b5ad020d9e838d4fc7923463c090ec',1,'stack.h']]],
-  ['stack_5fpop',['stack_pop',['../stack_8h.html#ada2d46ded21cd4daf6bdee28a869234a',1,'stack.h']]],
-  ['stack_5fpopn',['stack_popn',['../stack_8h.html#a648d4f1403ac5491029476d568872540',1,'stack.h']]],
-  ['stack_5fprint',['stack_print',['../stack_8h.html#a1d786da8730eb54e577b20f7ac457793',1,'stack.h']]],
-  ['stack_5fpush',['stack_push',['../stack_8h.html#a065fbd67e3a480eeb3150db6193734cb',1,'stack.h']]],
-  ['stack_5ftoarraylist',['stack_toarraylist',['../conversions_8h.html#aeb66bbc014dfd7dfe9101c32aaedbbf5',1,'conversions.h']]],
-  ['stack_5ftolinkedlist',['stack_tolinkedlist',['../conversions_8h.html#a20f9b3d175e3a2e4542cfc6ce419d738',1,'conversions.h']]],
-  ['stack_5ftop',['stack_top',['../stack_8h.html#a3a2c61f91ecd6c2f3824c329e23a313e',1,'stack.h']]],
-  ['stack_5ftopn',['stack_topn',['../stack_8h.html#ad64c89e35d68938a0448db83ffeed507',1,'stack.h']]],
-  ['stack_5ftoqueue',['stack_toqueue',['../conversions_8h.html#a5981c0f1af9b353e6500f0375bde8d5b',1,'conversions.h']]]
+  ['queue_5fautoclear',['queue_autoclear',['../queue_8h.html#a5288adb1d3388e420006505d7ca25841',1,'queue.h']]],
+  ['queue_5fcopy',['queue_copy',['../queue_8h.html#ab524fc59bf0d3930f62844e9620e712a',1,'queue.h']]],
+  ['queue_5fdequeue',['queue_dequeue',['../queue_8h.html#a059d68711525c149ccf2361f360537e9',1,'queue.h']]],
+  ['queue_5fenqueue',['queue_enqueue',['../queue_8h.html#aaa5f0c1b3065281d9f8b89c7e3279ed9',1,'queue.h']]],
+  ['queue_5ffree',['queue_free',['../queue_8h.html#ac8395c96973c80c935435f6b31479397',1,'queue.h']]],
+  ['queue_5ffreeall',['queue_freeall',['../queue_8h.html#ac016f147740b241441e35de0e2555306',1,'queue.h']]],
+  ['queue_5flength',['queue_length',['../queue_8h.html#aa3b76e534be3f17798babd44724db682',1,'queue.h']]],
+  ['queue_5fnew',['queue_new',['../queue_8h.html#a217fbe3b1f9577519fd427b2dd1d3455',1,'queue.h']]],
+  ['queue_5fprint',['queue_print',['../queue_8h.html#aedb8775b7f6c7a293de42c0223311783',1,'queue.h']]],
+  ['queue_5frebase',['queue_rebase',['../queue_8h.html#a3ff938294eb518d999e7174526725204',1,'queue.h']]],
+  ['queue_5fresize',['queue_resize',['../queue_8h.html#a236935193aa854f0ce869da29662c949',1,'queue.h']]],
+  ['queue_5ftoarraylist',['queue_toarraylist',['../conversions_8h.html#af6008f697bdde608c6764d56e9760d1b',1,'conversions.h']]],
+  ['queue_5ftolinkedlist',['queue_tolinkedlist',['../conversions_8h.html#a476210bc63859e52b4ede0be00610ca6',1,'conversions.h']]],
+  ['queue_5ftostack',['queue_tostack',['../conversions_8h.html#ae5a51aa32dcc470210c8deaf9ab3bcc6',1,'conversions.h']]]
 ];
