@@ -167,5 +167,17 @@ extern inline arraylist_t * arraylist_copy(arraylist_t * arraylist){
 	return newlist;
 }
 
+extern inline void arraylist_extend(arraylist_t * arraylist,arraylist_t * other){
+	for(int i = 0; i<arraylist->filled;i++){
+		arraylist_append(arraylist,arraylist->value[i]);
+	}
+}
+
+extern inline void arraylist_clear(arraylist_t * arraylist){
+	free(arraylist->value);
+	arraylist->value = malloc(ARRAYLIST_STARTSIZE*sizeof(void *));
+	arraylist->size = ARRAYLIST_STARTSIZE;
+	arraylist->filled = 0;
+}
 
 #endif

@@ -199,12 +199,28 @@ extern inline void linkedlist_print(linkedlist_t * list, printfn_t printfn){
 	printf("]\n");
 }
 
-extern inline linkedlist_t * linkedlist_link_copy(linkedlist_t * list){
+extern inline linkedlist_t * linkedlist_copy(linkedlist_t * list){
 	linkedlist_t * newlist = linkedlist_new();
 	foreach(link,list){
 		linkedlist_append(newlist,link->value);
 	}
 	return newlist;
 }
+
+extern inline void linkedlist_extend(linkedlist_t * list,linkedlist_t * other){
+	foreach(link,other){
+		linkedlist_append(list,link->value);
+	}
+}
+
+extern inline void linkedlist_clear(linkedlist_t * list){
+	foreach(link,list){
+		linkedlist_link_free(link);
+	}
+	list->HEAD=NULL;
+	list->TAIL=NULL;
+	list->size=0;
+}
+
 
 #endif

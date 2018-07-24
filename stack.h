@@ -77,6 +77,10 @@ extern inline void stack_freeall(stack_t * stack){
 	free(stack);
 }
 
+extern inline void stack_clear(stack_t * stack){
+	arraylist_clear(stack->data);
+
+}
 
 
 #endif

@@ -118,5 +118,14 @@ extern inline queue_t * queue_copy(queue_t * queue){
 	return newqueue;
 }
 
+extern inline void queue_clear(queue_t * queue){
+	free(queue->value);
+	queue->value = malloc(QUEUE_STARTSIZE*sizeof(void *));
+	queue->size = QUEUE_STARTSIZE;
+	queue->filled = 0;
+	queue->emptyoffset=0;
+	queue->autoclear=QUEUE_AUTOCLEAR_DEFAULT;
+}
+
 
 #endif

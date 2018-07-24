@@ -74,28 +74,6 @@ extern inline void string_append(string_t * string,char value){
 	string->filled++;
 }
 
-extern inline void string_extend(string_t * string,string_t * other){
-	for (int i = 0; i < other->filled; ++i){
-		char item = string->value[i];
-		string_append(string,item);
-	}
-}
-
-
-extern inline void string_extend_charpnt(string_t * string,char * value){
-	string_t temp = charpnt_tostring(value)
-	string_extend(string,temp);
-	string_free(temp);
-}
-
-extern inline void string_set(string_t * string,char * value){
-	while(*value != '\0'){
-		char item = *value;
-		value++;
-		string_append(string,item);
-	}
-}
-
 extern inline void string_insert(string_t * string,int index,char value){
 	if(string->filled >= string->size){
 		string_resize(string,string->size*2);	
@@ -178,5 +156,34 @@ extern inline string_t * string_copy(string_t * string){
 	return newstring;
 }
 
+extern inline void string_extend(string_t * string,string_t * other){
+	for (int i = 0; i < other->filled; ++i){
+		char item = other->value[i];
+		string_append(string,item);
+	}
+}
+
+extern inline void string_set(string_t * string,char * value){
+	while(*value != '\0'){
+		char item = *value;
+		value++;
+		string_append(string,item);
+	}
+}
+
+
+extern inline void string_extend_charpnt(string_t * string,char * value){
+	string_t * temp = string_new();
+	string_set(temp,value);
+	string_extend(string,temp);
+	string_free(temp);
+}
+
+extern inline void string_clear(string_t * string){
+	free(string->value);
+	string->value = malloc(STRING_STARTSIZE*sizeof(char));
+	string->size = STRING_STARTSIZE;
+	string->filled = 0;
+}
 
 #endif
