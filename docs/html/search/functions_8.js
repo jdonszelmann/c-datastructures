@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['stack_5fclear',['stack_clear',['../stack_8h.html#a82753d303951dbbb90c6e30734a8e204',1,'stack.h']]],
   ['stack_5fcopy',['stack_copy',['../stack_8h.html#afab0083672c095c41e8ffc705f72f36f',1,'stack.h']]],
   ['stack_5fempty',['stack_empty',['../stack_8h.html#af74c8942367bf2d55c00e0f123bafc7d',1,'stack.h']]],
   ['stack_5ffree',['stack_free',['../stack_8h.html#a362c99093288b5fc1016951679a8be78',1,'stack.h']]],
@@ -15,6 +16,7 @@ var searchData=
   ['stack_5ftopn',['stack_topn',['../stack_8h.html#ad64c89e35d68938a0448db83ffeed507',1,'stack.h']]],
   ['stack_5ftoqueue',['stack_toqueue',['../conversions_8h.html#a5981c0f1af9b353e6500f0375bde8d5b',1,'conversions.h']]],
   ['string_5fappend',['string_append',['../string_8h.html#a4acd3723240500d90b439dc12661415d',1,'string.h']]],
+  ['string_5fclear',['string_clear',['../string_8h.html#aca7cd4c264afbeaf466f87ffd781e5e6',1,'string.h']]],
   ['string_5fcontains',['string_contains',['../string_8h.html#af23f1022da32b3ec3a7d9fdc795617b8',1,'string.h']]],
   ['string_5fcopy',['string_copy',['../string_8h.html#adb4a007fb9e300e9e0642354a0ec740b',1,'string.h']]],
   ['string_5fdelete',['string_delete',['../string_8h.html#ab9e0f3180d91b62ebb01a63b98f0b6d3',1,'string.h']]],

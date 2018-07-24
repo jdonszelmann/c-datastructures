@@ -1,8 +1,11 @@
 var searchData=
 [
   ['linkedlist_5fappend',['linkedlist_append',['../linkedlist_8h.html#a0d9503a42d93b5117f220cb0767a9d0a',1,'linkedlist.h']]],
+  ['linkedlist_5fclear',['linkedlist_clear',['../linkedlist_8h.html#aedd304dba4fb7eb2c2580507d6263a77',1,'linkedlist.h']]],
   ['linkedlist_5fcontains',['linkedlist_contains',['../linkedlist_8h.html#aa04c959f4a8961db5b0ca68d5d21133a',1,'linkedlist.h']]],
+  ['linkedlist_5fcopy',['linkedlist_copy',['../linkedlist_8h.html#a2a4f9f3c84591582c120f40a15c825f2',1,'linkedlist.h']]],
   ['linkedlist_5fdelete',['linkedlist_delete',['../linkedlist_8h.html#af1609596885dddc6f67ed0d76dcac826',1,'linkedlist.h']]],
+  ['linkedlist_5fextend',['linkedlist_extend',['../linkedlist_8h.html#afd372447bae67e0e67fc50453f780360',1,'linkedlist.h']]],
   ['linkedlist_5ffind',['linkedlist_find',['../linkedlist_8h.html#ad1335de08e0eb643decaa14f11566ae8',1,'linkedlist.h']]],
   ['linkedlist_5ffirstelement',['linkedlist_firstelement',['../linkedlist_8h.html#a3d147e9ed43622dba232e07aa77dab48',1,'linkedlist.h']]],
   ['linkedlist_5ffree',['linkedlist_free',['../linkedlist_8h.html#a9baa76eab0d60a88433707fd972bdcb5',1,'linkedlist.h']]],
@@ -10,7 +13,6 @@ var searchData=
   ['linkedlist_5fgetvalue',['linkedlist_getvalue',['../linkedlist_8h.html#a45d80db53a82d5a9deae91d7fffb8557',1,'linkedlist.h']]],
   ['linkedlist_5finsert',['linkedlist_insert',['../linkedlist_8h.html#ab5209fd6cd52ac339f1d35416c63e0c3',1,'linkedlist.h']]],
   ['linkedlist_5flength',['linkedlist_length',['../linkedlist_8h.html#af7b8bd5eccec09ef4e572e748769e771',1,'linkedlist.h']]],
-  ['linkedlist_5flink_5fcopy',['linkedlist_link_copy',['../linkedlist_8h.html#a20ce7ceadf38ef5d7ff23933f2666029',1,'linkedlist.h']]],
   ['linkedlist_5flink_5ffree',['linkedlist_link_free',['../linkedlist_8h.html#a99dea7659433a784546fe9107cee6891',1,'linkedlist.h']]],
   ['linkedlist_5flink_5ffreeall',['linkedlist_link_freeall',['../linkedlist_8h.html#afda33e884f54e4bb38cfee05f4deac22',1,'linkedlist.h']]],
   ['linkedlist_5flink_5fnew',['linkedlist_link_new',['../linkedlist_8h.html#a6f90a908e4daf7aea35789b344a77d4d',1,'linkedlist.h']]],

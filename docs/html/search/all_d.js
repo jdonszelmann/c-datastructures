@@ -4,6 +4,7 @@ var searchData=
   ['queue_2eh',['queue.h',['../queue_8h.html',1,'']]],
   ['queue_5fautoclear',['queue_autoclear',['../queue_8h.html#a5288adb1d3388e420006505d7ca25841',1,'queue.h']]],
   ['queue_5fautoclear_5fdefault',['QUEUE_AUTOCLEAR_DEFAULT',['../queue_8h.html#a6edd0c06ca6e6ba6949ff9cc18de7c5e',1,'queue.h']]],
+  ['queue_5fclear',['queue_clear',['../queue_8h.html#af27bc733f07b2ff01a59ce198ede1e1a',1,'queue.h']]],
   ['queue_5fcopy',['queue_copy',['../queue_8h.html#ab524fc59bf0d3930f62844e9620e712a',1,'queue.h']]],
   ['queue_5fdequeue',['queue_dequeue',['../queue_8h.html#a059d68711525c149ccf2361f360537e9',1,'queue.h']]],
   ['queue_5fenqueue',['queue_enqueue',['../queue_8h.html#aaa5f0c1b3065281d9f8b89c7e3279ed9',1,'queue.h']]],
