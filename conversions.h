@@ -115,13 +115,13 @@ extern inline queue_t * stack_toqueue(stack_t * stack){
 
 //string-charpnt
 extern inline string_t * charpnt_tostring(char * str){
-	string_t * newstring = stack_new();
+	string_t * newstring = string_new();
 	while(*str != '\0'){
 		char item = *str;
-		*str++;
-		arraylist_append(newstring,item);
+		str++;
+		string_append(newstring,item);
 	}
-	return newstack;
+	return newstring;
 }
 
 extern inline char * string_tocharpnt(string_t * string){

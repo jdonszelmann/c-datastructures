@@ -180,7 +180,8 @@ int main(){
 		// queue_free(queue);
 
 	//string
-		string_t * string = string_new();
+		string_t * string = charpnt_tostring("hello world!");
+		string_print(string);
 
 	return 0;
 }

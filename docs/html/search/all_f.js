@@ -35,6 +35,7 @@ var searchData=
   ['string_5fprint',['string_print',['../string_8h.html#a016360bcefca9b673af0bd9f0a003357',1,'string.h']]],
   ['string_5fremove',['string_remove',['../string_8h.html#a4aef8347984006e0998c89d5944c1b01',1,'string.h']]],
   ['string_5fresize',['string_resize',['../string_8h.html#aa1acc465867856e8830dafb26bb6e4dd',1,'string.h']]],
+  ['string_5fset',['string_set',['../string_8h.html#ab4eb01816fddbfd97d53fb843657098b',1,'string.h']]],
   ['string_5fsetvalue',['string_setvalue',['../string_8h.html#adeb33b509a22a8c313de36f175e31234',1,'string.h']]],
   ['string_5fstartsize',['STRING_STARTSIZE',['../string_8h.html#a6800df32fc11eefce937c9a1e459a8af',1,'string.h']]],
   ['string_5ft',['string_t',['../string_8h.html#a2673f10c65153ad5b955574a5a36ccb2',1,'string.h']]],

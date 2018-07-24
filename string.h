@@ -74,6 +74,14 @@ extern inline void string_append(string_t * string,char value){
 	string->filled++;
 }
 
+extern inline void string_set(string_t * string,char * value){
+	while(*value != '\0'){
+		char item = *value;
+		value++;
+		string_append(string,item);
+	}
+}
+
 extern inline void string_insert(string_t * string,int index,char value){
 	if(string->filled >= string->size){
 		string_resize(string,string->size*2);	
