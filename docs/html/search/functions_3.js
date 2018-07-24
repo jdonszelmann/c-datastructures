@@ -20,5 +20,6 @@ var searchData=
   ['linkedlist_5fseek',['linkedlist_seek',['../linkedlist_8h.html#ac882cb489de4e5c02ff8a8453846dd8f',1,'linkedlist.h']]],
   ['linkedlist_5fsetvalue',['linkedlist_setvalue',['../linkedlist_8h.html#a8a29e324327b9323202b342011683fb8',1,'linkedlist.h']]],
   ['linkedlist_5ftoarraylist',['linkedlist_toarraylist',['../conversions_8h.html#aae048877dfb2fb809f7ad2b1d789bc67',1,'conversions.h']]],
+  ['linkedlist_5ftoqueue',['linkedlist_toqueue',['../conversions_8h.html#a10809d1f437a2e27860933effc8861c8',1,'conversions.h']]],
   ['linkedlist_5ftostack',['linkedlist_tostack',['../conversions_8h.html#a9ce143cef9650633637b0d6dac7d148f',1,'conversions.h']]]
 ];

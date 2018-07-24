@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['data',['data',['../structstack.html#a182563f1c44bfd1cb7eb69b973a09d8f',1,'stack']]]
+  ['autoclear',['autoclear',['../structqueue.html#a5b1353592752a0a4d80aee46fa5f22de',1,'queue']]]
 ];

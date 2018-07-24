@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['emptyoffset',['emptyoffset',['../structqueue.html#a6c3e7c6ec6711821b695e37ddba3e3e5',1,'queue']]]
+  ['data',['data',['../structstack.html#a182563f1c44bfd1cb7eb69b973a09d8f',1,'stack']]]
 ];

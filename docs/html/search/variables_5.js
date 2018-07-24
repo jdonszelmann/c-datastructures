@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['next',['next',['../structlinkedlist__link.html#ac6307628d26046c21081ef449a3daf73',1,'linkedlist_link']]]
+  ['left',['left',['../structbinarytree.html#a52215d95b0d68fdc2aaf5f39099c9786',1,'binarytree']]]
 ];
