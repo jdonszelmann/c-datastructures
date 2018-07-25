@@ -82,5 +82,10 @@ extern inline void stack_clear(stack_t * stack){
 
 }
 
+extern inline void stack_clearall(stack_t * stack){
+	arraylist_clearall(stack->data);
+
+}
+
 
 #endif

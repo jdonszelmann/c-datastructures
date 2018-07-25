@@ -182,6 +182,11 @@ int main(){
 	//string
 		string_t * string = charpnt_tostring("hello");
 		string_extend_charpnt(string," world!");
+		string_removeall(string,'l');
+		string_insert(string,2,'l');
+		string_insert(string,2,'l');
+		string_insert(string,9,'l');
+		printf("%i\n",string_length(string));	
 		string_print(string);
 
 	return 0;

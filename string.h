@@ -63,7 +63,11 @@ extern inline char string_getvalue(string_t * arraylist, int index){
 }
 
 extern inline void string_print(string_t * string){
-	printf("string \"%s\"\n",string->value);
+	printf("string \"");
+	for (int i = 0; i < string->filled; ++i){
+		printf("%c",string->value[i]);
+	}
+	printf("\"\n");
 }
 
 extern inline void string_append(string_t * string,char value){
@@ -130,13 +134,23 @@ extern inline char string_delete(string_t * string,int index){
 	return removed_data;
 }
 
-extern inline char string_remove(string_t * string,char value){
+extern inline void string_remove(string_t * string,char value){
 	int index = string_find(string,value);
 	if(index == -1){
-		return '\0';
+		return;
 	}
-	return string_delete(string,index);
+	string_delete(string,index);
 }
+
+extern inline void string_removeall(string_t * string,char value){
+	for (int i = 0; i < string->filled; ++i){
+		if(string->value[i] == value){
+			string_delete(string,i);
+			i--;
+		}
+	}	
+}
+
 
 extern inline void string_free(string_t * string){
 	free(string);
@@ -185,5 +199,7 @@ extern inline void string_clear(string_t * string){
 	string->size = STRING_STARTSIZE;
 	string->filled = 0;
 }
+
+
 
 #endif

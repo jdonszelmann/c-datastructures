@@ -161,6 +161,19 @@ extern inline void * linkedlist_remove(linkedlist_t * list,void * value, compare
 	return linkedlist_delete(list,index);
 }
 
+extern inline linkedlist_t * linkedlist_removeall(linkedlist_t * list,void * value, comparefn_t comparefn){
+	linkedlist_t * removed = linkedlist_new();
+
+	while(true){
+		int index = linkedlist_find(list,value,comparefn);
+		if(index == -1){
+			return removed;
+		}
+		linkedlist_append(removed,linkedlist_delete(list,index));
+	}
+}
+
+
 extern inline void linkedlist_insert(linkedlist_t * list, int index,void * value){
 	if(list->size == 0){
 		if(index == 0){
@@ -216,6 +229,16 @@ extern inline void linkedlist_extend(linkedlist_t * list,linkedlist_t * other){
 extern inline void linkedlist_clear(linkedlist_t * list){
 	foreach(link,list){
 		linkedlist_link_free(link);
+	}
+	list->HEAD=NULL;
+	list->TAIL=NULL;
+	list->size=0;
+}
+
+
+extern inline void linkedlist_clearall(linkedlist_t * list){
+	foreach(link,list){
+		linkedlist_link_freeall(link);
 	}
 	list->HEAD=NULL;
 	list->TAIL=NULL;

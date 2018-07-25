@@ -112,6 +112,17 @@ extern inline int arraylist_find(arraylist_t * arraylist,void * value, comparefn
 	return -1;	
 }
 
+
+static inline int arraylist_findn(arraylist_t * arraylist,void * value, comparefn_t comparefn, int start){
+	for(int i = 0; i<arraylist->filled;i++){
+		void * item = arraylist->value[i];
+		if(comparefn(item,value)) {
+			return i;
+		}
+	}
+	return -1;	
+}
+
 extern inline bool arraylist_contains(arraylist_t * arraylist,void * value, comparefn_t comparefn){
 	return arraylist_find(arraylist,value,comparefn) != -1;
 }
@@ -144,6 +155,21 @@ extern inline void * arraylist_remove(arraylist_t * arraylist,void * value, comp
 	}
 	return arraylist_delete(arraylist,index);
 }
+
+extern inline arraylist_t * arraylist_removeall(arraylist_t * arraylist,void * value, comparefn_t comparefn){
+	int index = 0;
+	arraylist_t * removed = arraylist_new(); 
+	while(true){
+		index = arraylist_findn(arraylist,value,comparefn,index);
+		if(index == -1){
+			return removed;
+		}
+		arraylist_append(removed,arraylist_delete(arraylist,index));
+		index--;
+	}
+	
+}
+
 
 extern inline void arraylist_free(arraylist_t * arraylist){
 	free(arraylist->value);
@@ -179,5 +205,16 @@ extern inline void arraylist_clear(arraylist_t * arraylist){
 	arraylist->size = ARRAYLIST_STARTSIZE;
 	arraylist->filled = 0;
 }
+
+extern inline void arraylist_clearall(arraylist_t * arraylist){
+	for (int i = 0; i < arraylist->filled; ++i){
+		free(arraylist->value[i]);
+	}
+	free(arraylist->value);
+	arraylist->value = malloc(ARRAYLIST_STARTSIZE*sizeof(void *));
+	arraylist->size = ARRAYLIST_STARTSIZE;
+	arraylist->filled = 0;
+}
+
 
 #endif

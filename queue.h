@@ -127,5 +127,17 @@ extern inline void queue_clear(queue_t * queue){
 	queue->autoclear=QUEUE_AUTOCLEAR_DEFAULT;
 }
 
+extern inline void queue_clearall(queue_t * queue){
+	for (int i = queue->emptyoffset; i < queue->filled; ++i){
+		free(queue->value[i]);
+	}
+	free(queue->value);
+	queue->value = malloc(QUEUE_STARTSIZE*sizeof(void *));
+	queue->size = QUEUE_STARTSIZE;
+	queue->filled = 0;
+	queue->emptyoffset=0;
+	queue->autoclear=QUEUE_AUTOCLEAR_DEFAULT;
+}
+
 
 #endif
