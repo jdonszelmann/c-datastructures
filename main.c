@@ -10,6 +10,10 @@ void intprintfn(void * val){
 	printf("%i",*(int *)val);
 }
 
+void stringprintfn(void * val){
+	string_print_nonewline((string_t *)val);
+}
+
 void pntrprintfn(void * val){
 	printf("0x%08lx",(unsigned long)val);
 }
@@ -186,7 +190,9 @@ int main(){
 		string_insert(string,2,'l');
 		string_insert(string,2,'l');
 		string_insert(string,9,'l');
-		printf("%i\n",string_length(string));	
+		printf("%i\n",string_length(string));
+		arraylist_t * split = string_split_toarraylist(string,'l');
+		arraylist_print(split,stringprintfn);
 		string_print(string);
 
 	return 0;

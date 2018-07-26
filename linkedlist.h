@@ -98,6 +98,11 @@ static inline void linkedlist_link_freeall(linkedlist_link_t * list){
 	free(list);
 }
 
+static inline void linkedlist_link_freefunc(linkedlist_link_t * list, freefunc_t freefunc){
+	freefunc(list->value);
+	free(list);
+}
+
 static inline void linkedlist_link_free(linkedlist_link_t * list){
 	free(list);
 }
@@ -108,6 +113,14 @@ extern inline void linkedlist_freeall(linkedlist_t * list){
 	}
 	free(list);
 }
+
+extern inline void linkedlist_freefunc(linkedlist_t * list, freefunc_t freefunc){
+	foreach(link,list){
+		linkedlist_link_freefunc(link,freefunc);
+	}
+	free(list);
+}
+
 
 extern inline void linkedlist_free(linkedlist_t * list){
 	foreach(link,list){
@@ -211,6 +224,16 @@ extern inline void linkedlist_print(linkedlist_t * list, printfn_t printfn){
 	}
 	printf("]\n");
 }
+
+extern inline void linkedlist_print_nonewline(linkedlist_t * list, printfn_t printfn){
+	printf("single linked list [");
+	foreach(i,list){
+		if(i != list->HEAD) {printf(",");}
+		printfn(i->value);
+	}
+	printf("]");
+}
+
 
 extern inline linkedlist_t * linkedlist_copy(linkedlist_t * list){
 	linkedlist_t * newlist = linkedlist_new();

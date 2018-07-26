@@ -73,6 +73,17 @@ extern inline void arraylist_print(arraylist_t * arraylist, printfn_t printfn){
 	printf("]\n");
 }
 
+extern inline void arraylist_print_nonewline(arraylist_t * arraylist, printfn_t printfn){
+	printf("arraylist [");
+	for(int i = 0; i<arraylist->filled;i++){
+		void * item = arraylist->value[i];
+		if(i != 0) {printf(",");}
+		printfn(item);
+	}
+	printf("]");
+}
+
+
 extern inline void arraylist_append(arraylist_t * arraylist,void * value){
 	if(arraylist->filled >= arraylist->size){
 		arraylist_resize(arraylist,arraylist->size*2);	
@@ -179,6 +190,14 @@ extern inline void arraylist_free(arraylist_t * arraylist){
 extern inline void arraylist_freeall(arraylist_t * arraylist){
 	for (int i = 0; i < arraylist->filled; ++i){
 		free(arraylist->value[i]);
+	}
+	free(arraylist->value);
+	free(arraylist);
+}
+
+extern inline void arraylist_freefunc(arraylist_t * arraylist, freefunc_t freefunc){
+	for (int i = 0; i < arraylist->filled; ++i){
+		freefunc(arraylist->value[i]);
 	}
 	free(arraylist->value);
 	free(arraylist);

@@ -67,6 +67,16 @@ extern inline void stack_print(stack_t * stack, printfn_t printfn){
 	printf("]\n");
 }
 
+extern inline void stack_print_nonewline(stack_t * stack, printfn_t printfn){
+	printf("stack [");
+	for(int i = 0; i<stack->data->filled;i++){
+		void * item = stack->data->value[i];
+		if(i != 0) {printf(",");}
+		printfn(item);
+	}
+	printf("]");
+}
+
 extern inline void stack_free(stack_t * stack){
 	arraylist_free(stack->data);
 	free(stack);
@@ -74,6 +84,12 @@ extern inline void stack_free(stack_t * stack){
 
 extern inline void stack_freeall(stack_t * stack){
 	arraylist_freeall(stack->data);
+	free(stack);
+}
+
+
+extern inline void stack_freefunc(stack_t * stack, freefunc_t freefunc){
+	arraylist_freefunc(stack->data,freefunc);
 	free(stack);
 }
 

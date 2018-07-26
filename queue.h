@@ -62,6 +62,17 @@ extern inline void queue_print(queue_t * queue, printfn_t printfn){
 	printf("]\n");
 }
 
+extern inline void queue_print_nonewline(queue_t * queue, printfn_t printfn){
+	printf("queue [");
+	for(int i = queue->emptyoffset; i<queue->filled;i++){
+		void * item = queue->value[i];
+		if(i != queue->emptyoffset) {printf(",");}
+		printfn(item);
+	}
+	printf("] ");
+}
+
+
 extern inline void queue_enqueue(queue_t * queue,void * value){
 	if(queue->filled >= queue->size){
 		queue_resize(queue,queue->size*2);	
@@ -104,6 +115,14 @@ extern inline void queue_free(queue_t * queue){
 extern inline void queue_freeall(queue_t * queue){
 	for (int i = queue->emptyoffset; i < queue->filled; ++i){
 		free(queue->value[i]);
+	}
+	free(queue->value);
+	free(queue);
+}
+
+extern inline void queue_freefunc(queue_t * queue, freefunc_t freefunc){
+	for (int i = queue->emptyoffset; i < queue->filled; ++i){
+		freefunc(queue->value[i]);
 	}
 	free(queue->value);
 	free(queue);

@@ -70,6 +70,15 @@ extern inline void string_print(string_t * string){
 	printf("\"\n");
 }
 
+extern inline void string_print_nonewline(string_t * string){
+	printf("string \"");
+	for (int i = 0; i < string->filled; ++i){
+		printf("%c",string->value[i]);
+	}
+	printf("\" ");
+}
+
+
 extern inline void string_append(string_t * string,char value){
 	if(string->filled >= string->size){
 		string_resize(string,string->size*2);	
@@ -151,6 +160,36 @@ extern inline void string_removeall(string_t * string,char value){
 	}	
 }
 
+
+extern inline arraylist_t * string_split_toarraylist(string_t * string,char value){
+	arraylist_t * result = arraylist_new();
+	string_t * newstring = string_new();
+	for (int i = 0; i < string->filled; ++i){
+		if(string->value[i] == value){
+			arraylist_append(result,newstring);
+			newstring = string_new();
+		}else{
+			string_append(newstring,string_getvalue(string,i));
+		}
+	}
+	arraylist_append(result,newstring);
+	return result;
+}
+
+extern inline linkedlist_t * string_split_tolinkedlist(string_t * string,char value){
+	linkedlist_t * result = linkedlist_new();
+	string_t * newstring = string_new();
+	for (int i = 0; i < string->filled; ++i){
+		if(string->value[i] == value){
+			linkedlist_append(result,newstring);
+			newstring = string_new();
+		}else{
+			string_append(newstring,string_getvalue(string,i));
+		}
+	}
+	linkedlist_append(result,newstring);
+	return result;
+}
 
 extern inline void string_free(string_t * string){
 	free(string);
