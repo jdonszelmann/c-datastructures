@@ -145,6 +145,8 @@ Functions</h2></td></tr>
 <tr class="separator:a3ff938294eb518d999e7174526725204"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aedb8775b7f6c7a293de42c0223311783"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8h.html#aedb8775b7f6c7a293de42c0223311783">queue_print</a> (<a class="el" href="queue_8h.html#aa8acf648f3b0c69d7e132fcc61dc58c7">queue_t</a> *<a class="el" href="structqueue.html">queue</a>, <a class="el" href="types_8h.html#a06d836e104988fed0461b03319344b02">printfn_t</a> printfn)</td></tr>
 <tr class="separator:aedb8775b7f6c7a293de42c0223311783"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac41bb39c007aecde136e982102cb9e5f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8h.html#ac41bb39c007aecde136e982102cb9e5f">queue_print_nonewline</a> (<a class="el" href="queue_8h.html#aa8acf648f3b0c69d7e132fcc61dc58c7">queue_t</a> *<a class="el" href="structqueue.html">queue</a>, <a class="el" href="types_8h.html#a06d836e104988fed0461b03319344b02">printfn_t</a> printfn)</td></tr>
+<tr class="separator:ac41bb39c007aecde136e982102cb9e5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa5f0c1b3065281d9f8b89c7e3279ed9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8h.html#aaa5f0c1b3065281d9f8b89c7e3279ed9">queue_enqueue</a> (<a class="el" href="queue_8h.html#aa8acf648f3b0c69d7e132fcc61dc58c7">queue_t</a> *<a class="el" href="structqueue.html">queue</a>, void *value)</td></tr>
 <tr class="separator:aaa5f0c1b3065281d9f8b89c7e3279ed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3b76e534be3f17798babd44724db682"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8h.html#aa3b76e534be3f17798babd44724db682">queue_length</a> (<a class="el" href="queue_8h.html#aa8acf648f3b0c69d7e132fcc61dc58c7">queue_t</a> *<a class="el" href="structqueue.html">queue</a>)</td></tr>
@@ -157,6 +159,8 @@ Functions</h2></td></tr>
 <tr class="separator:ac8395c96973c80c935435f6b31479397"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac016f147740b241441e35de0e2555306"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8h.html#ac016f147740b241441e35de0e2555306">queue_freeall</a> (<a class="el" href="queue_8h.html#aa8acf648f3b0c69d7e132fcc61dc58c7">queue_t</a> *<a class="el" href="structqueue.html">queue</a>)</td></tr>
 <tr class="separator:ac016f147740b241441e35de0e2555306"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55a14144d4751cff57cb4731d53c0ab6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8h.html#a55a14144d4751cff57cb4731d53c0ab6">queue_freefunc</a> (<a class="el" href="queue_8h.html#aa8acf648f3b0c69d7e132fcc61dc58c7">queue_t</a> *<a class="el" href="structqueue.html">queue</a>, <a class="el" href="types_8h.html#ad9ea42f1a4bf2086d7cc0162dbe0777e">freefunc_t</a> freefunc)</td></tr>
+<tr class="separator:a55a14144d4751cff57cb4731d53c0ab6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab524fc59bf0d3930f62844e9620e712a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="queue_8h.html#aa8acf648f3b0c69d7e132fcc61dc58c7">queue_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8h.html#ab524fc59bf0d3930f62844e9620e712a">queue_copy</a> (<a class="el" href="queue_8h.html#aa8acf648f3b0c69d7e132fcc61dc58c7">queue_t</a> *<a class="el" href="structqueue.html">queue</a>)</td></tr>
 <tr class="separator:ab524fc59bf0d3930f62844e9620e712a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af27bc733f07b2ff01a59ce198ede1e1a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8h.html#af27bc733f07b2ff01a59ce198ede1e1a">queue_clear</a> (<a class="el" href="queue_8h.html#aa8acf648f3b0c69d7e132fcc61dc58c7">queue_t</a> *<a class="el" href="structqueue.html">queue</a>)</td></tr>
@@ -479,6 +483,42 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a id="a55a14144d4751cff57cb4731d53c0ab6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55a14144d4751cff57cb4731d53c0ab6">&#9670;&nbsp;</a></span>queue_freefunc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void queue_freefunc </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="queue_8h.html#aa8acf648f3b0c69d7e132fcc61dc58c7">queue_t</a> *&#160;</td>
+          <td class="paramname"><em>queue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ad9ea42f1a4bf2086d7cc0162dbe0777e">freefunc_t</a>&#160;</td>
+          <td class="paramname"><em>freefunc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aa3b76e534be3f17798babd44724db682"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa3b76e534be3f17798babd44724db682">&#9670;&nbsp;</a></span>queue_length()</h2>
 
@@ -554,6 +594,42 @@ Here is the caller graph for this function:</div>
       <table class="memname">
         <tr>
           <td class="memname">void queue_print </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="queue_8h.html#aa8acf648f3b0c69d7e132fcc61dc58c7">queue_t</a> *&#160;</td>
+          <td class="paramname"><em>queue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a06d836e104988fed0461b03319344b02">printfn_t</a>&#160;</td>
+          <td class="paramname"><em>printfn</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac41bb39c007aecde136e982102cb9e5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac41bb39c007aecde136e982102cb9e5f">&#9670;&nbsp;</a></span>queue_print_nonewline()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void queue_print_nonewline </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="queue_8h.html#aa8acf648f3b0c69d7e132fcc61dc58c7">queue_t</a> *&#160;</td>
           <td class="paramname"><em>queue</em>, </td>
@@ -677,7 +753,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 25 2018 16:06:12 for C Datastructures by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 26 2018 13:48:44 for C Datastructures by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>

@@ -147,10 +147,14 @@ Functions</h2></td></tr>
 <tr class="separator:af74c8942367bf2d55c00e0f123bafc7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d786da8730eb54e577b20f7ac457793"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stack_8h.html#a1d786da8730eb54e577b20f7ac457793">stack_print</a> (<a class="el" href="stack_8h.html#a4626fc2f61bed7e5faec5b4f459a02f7">stack_t</a> *<a class="el" href="structstack.html">stack</a>, <a class="el" href="types_8h.html#a06d836e104988fed0461b03319344b02">printfn_t</a> printfn)</td></tr>
 <tr class="separator:a1d786da8730eb54e577b20f7ac457793"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac26989bc1166a19e495312cc9bd55963"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stack_8h.html#ac26989bc1166a19e495312cc9bd55963">stack_print_nonewline</a> (<a class="el" href="stack_8h.html#a4626fc2f61bed7e5faec5b4f459a02f7">stack_t</a> *<a class="el" href="structstack.html">stack</a>, <a class="el" href="types_8h.html#a06d836e104988fed0461b03319344b02">printfn_t</a> printfn)</td></tr>
+<tr class="separator:ac26989bc1166a19e495312cc9bd55963"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a362c99093288b5fc1016951679a8be78"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stack_8h.html#a362c99093288b5fc1016951679a8be78">stack_free</a> (<a class="el" href="stack_8h.html#a4626fc2f61bed7e5faec5b4f459a02f7">stack_t</a> *<a class="el" href="structstack.html">stack</a>)</td></tr>
 <tr class="separator:a362c99093288b5fc1016951679a8be78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a538e1272753b82cfc1b2181be556ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stack_8h.html#a7a538e1272753b82cfc1b2181be556ef">stack_freeall</a> (<a class="el" href="stack_8h.html#a4626fc2f61bed7e5faec5b4f459a02f7">stack_t</a> *<a class="el" href="structstack.html">stack</a>)</td></tr>
 <tr class="separator:a7a538e1272753b82cfc1b2181be556ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec229ea3649d139eb911136c528c6299"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stack_8h.html#aec229ea3649d139eb911136c528c6299">stack_freefunc</a> (<a class="el" href="stack_8h.html#a4626fc2f61bed7e5faec5b4f459a02f7">stack_t</a> *<a class="el" href="structstack.html">stack</a>, <a class="el" href="types_8h.html#ad9ea42f1a4bf2086d7cc0162dbe0777e">freefunc_t</a> freefunc)</td></tr>
+<tr class="separator:aec229ea3649d139eb911136c528c6299"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82753d303951dbbb90c6e30734a8e204"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stack_8h.html#a82753d303951dbbb90c6e30734a8e204">stack_clear</a> (<a class="el" href="stack_8h.html#a4626fc2f61bed7e5faec5b4f459a02f7">stack_t</a> *<a class="el" href="structstack.html">stack</a>)</td></tr>
 <tr class="separator:a82753d303951dbbb90c6e30734a8e204"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33111bbce7e6de1c36d7486cdb13460e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stack_8h.html#a33111bbce7e6de1c36d7486cdb13460e">stack_clearall</a> (<a class="el" href="stack_8h.html#a4626fc2f61bed7e5faec5b4f459a02f7">stack_t</a> *<a class="el" href="structstack.html">stack</a>)</td></tr>
@@ -376,6 +380,51 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a id="aec229ea3649d139eb911136c528c6299"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec229ea3649d139eb911136c528c6299">&#9670;&nbsp;</a></span>stack_freefunc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stack_freefunc </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="stack_8h.html#a4626fc2f61bed7e5faec5b4f459a02f7">stack_t</a> *&#160;</td>
+          <td class="paramname"><em>stack</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ad9ea42f1a4bf2086d7cc0162dbe0777e">freefunc_t</a>&#160;</td>
+          <td class="paramname"><em>freefunc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="stack_8h_aec229ea3649d139eb911136c528c6299_cgraph.png" border="0" usemap="#stack_8h_aec229ea3649d139eb911136c528c6299_cgraph" alt=""/></div>
+<map name="stack_8h_aec229ea3649d139eb911136c528c6299_cgraph" id="stack_8h_aec229ea3649d139eb911136c528c6299_cgraph">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,113,32"/>
+<area shape="rect" id="node2" href="arraylist_8h.html#af44f51157377c311e0eba5fca115c198" title=" " alt="" coords="161,5,284,32"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="a47b5ad020d9e838d4fc7923463c090ec"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a47b5ad020d9e838d4fc7923463c090ec">&#9670;&nbsp;</a></span>stack_new()</h2>
 
@@ -538,6 +587,42 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a id="ac26989bc1166a19e495312cc9bd55963"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac26989bc1166a19e495312cc9bd55963">&#9670;&nbsp;</a></span>stack_print_nonewline()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stack_print_nonewline </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="stack_8h.html#a4626fc2f61bed7e5faec5b4f459a02f7">stack_t</a> *&#160;</td>
+          <td class="paramname"><em>stack</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a06d836e104988fed0461b03319344b02">printfn_t</a>&#160;</td>
+          <td class="paramname"><em>printfn</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a065fbd67e3a480eeb3150db6193734cb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a065fbd67e3a480eeb3150db6193734cb">&#9670;&nbsp;</a></span>stack_push()</h2>
 
@@ -667,7 +752,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jul 25 2018 16:06:12 for C Datastructures by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 26 2018 13:48:44 for C Datastructures by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.15
 </small></address>
