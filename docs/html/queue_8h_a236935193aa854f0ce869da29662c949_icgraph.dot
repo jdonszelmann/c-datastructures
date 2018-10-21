@@ -1,0 +1,22 @@
+digraph "queue_resize"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="queue_resize",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="queue_rebase",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$queue_8h.html#a3ff938294eb518d999e7174526725204"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="queue_dequeue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$queue_8h.html#a059d68711525c149ccf2361f360537e9"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="queue_enqueue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$queue_8h.html#aaa5f0c1b3065281d9f8b89c7e3279ed9"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="linkedlist_toqueue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$conversions_8h.html#a10809d1f437a2e27860933effc8861c8"];
+  Node4 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="arraylist_toqueue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$conversions_8h.html#ae259c843702705676bb721ce24b23aca"];
+  Node4 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="stack_toqueue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$conversions_8h.html#a5981c0f1af9b353e6500f0375bde8d5b"];
+  Node4 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="queue_copy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$queue_8h.html#ab524fc59bf0d3930f62844e9620e712a"];
+}

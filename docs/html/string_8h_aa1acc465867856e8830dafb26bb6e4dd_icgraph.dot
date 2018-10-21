@@ -1,0 +1,33 @@
+digraph "string_resize"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="string_resize",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="string_append",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$string_8h.html#a4acd3723240500d90b439dc12661415d"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="charpnt_tostring",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$conversions_8h.html#a2e02c5260606b2cf7dc793938f1f379a"];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="string_split_toarraylist",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$string_8h.html#ae281e894d91ec18db9b8712d9082d430"];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="string_split_tolinkedlist",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$string_8h.html#a5eefbd3a4e20c4bbaa364a1df17c5b6e"];
+  Node2 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="string_copy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$string_8h.html#adb4a007fb9e300e9e0642354a0ec740b"];
+  Node2 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="string_extend",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$string_8h.html#aa6bffdfdeecb595a0e76b3c924e4939b"];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="string_extend_charpnt",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$string_8h.html#a14a252f4a366a55e9ec801d5a5442187"];
+  Node2 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="string_set",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$string_8h.html#ab4eb01816fddbfd97d53fb843657098b"];
+  Node9 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="string_insert",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$string_8h.html#a52dff535067f0c0508ca352d4a620229"];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="string_delete",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$string_8h.html#ab9e0f3180d91b62ebb01a63b98f0b6d3"];
+  Node11 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="string_remove",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$string_8h.html#aa6656e5f0a11691fde2c5fd54ebb20f0"];
+  Node11 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="string_removeall",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$string_8h.html#abc370354e3ce9b95de25c545ae7815b1"];
+}

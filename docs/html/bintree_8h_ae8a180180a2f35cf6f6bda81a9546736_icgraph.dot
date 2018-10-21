@@ -1,0 +1,16 @@
+digraph "binarytree_new"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="binarytree_new",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="binarytree_leftchild",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$bintree_8h.html#a856aa36e75c0dfeecb04c053ae9719d9"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="binarytree_rightchild",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$bintree_8h.html#aac87f91cbb6fe2cc808712fe4faadc43"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="binarytree_leftchild\l_setvalue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$bintree_8h.html#ab3c05da3045e505a064f54fa16d0bb4d"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="binarytree_rightchild\l_setvalue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$bintree_8h.html#a2233357978a51df1376b37dd28a5e11f"];
+}

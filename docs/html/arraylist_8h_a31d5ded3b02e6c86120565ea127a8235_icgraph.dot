@@ -1,0 +1,16 @@
+digraph "arraylist_delete"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="arraylist_delete",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="arraylist_remove",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$arraylist_8h.html#a22aeeb47116363fb6733341e36bfd829"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="arraylist_removeall",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$arraylist_8h.html#a55903647e985b86cb141733cc6d46bed"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="stack_pop",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$stack_8h.html#ada2d46ded21cd4daf6bdee28a869234a"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="stack_popn",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$stack_8h.html#a648d4f1403ac5491029476d568872540"];
+}

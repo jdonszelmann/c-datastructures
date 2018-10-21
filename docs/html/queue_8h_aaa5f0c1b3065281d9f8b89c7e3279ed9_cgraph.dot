@@ -1,0 +1,10 @@
+digraph "queue_enqueue"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="queue_enqueue",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="queue_resize",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$queue_8h.html#a236935193aa854f0ce869da29662c949"];
+}
