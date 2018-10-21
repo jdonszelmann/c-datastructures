@@ -292,8 +292,8 @@ extern inline arraylist_t * arraylist_copy(arraylist_t * arraylist){
 	joins two arraylists together end to end
 */
 extern inline void arraylist_extend(arraylist_t * arraylist, arraylist_t * other){
-	for(int i = 0; i<arraylist->filled;i++){
-		arraylist_append(arraylist,arraylist->value[i]);
+	for(int i = 0; i<other->filled;i++){
+		arraylist_append(arraylist,other->value[i]);
 	}
 }
 

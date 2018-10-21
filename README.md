@@ -32,12 +32,11 @@ ___
  ___
 
  todo:
- 	comments for everything except arraylist
- 	arraylist index operator overloading maybe?
+ 	comments for everything except arraylist and array
  	array
- 	array index operator overloading maybe?
  	arraylist negative indices
  	conversions: dlinkedlist --> linkedlist
  	conversions: dlinkedlist --> arraylist
  	conversions: dlinkedlist --> stack
  	conversions: dlinkedlist --> queue
+ 	exit(-1) optional with macro

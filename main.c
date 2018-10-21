@@ -52,26 +52,27 @@ int main(){
 		// binarytree_free(tree);
 
 	//arraylist tests
-		// arraylist_t * arraylist = arraylist_new();
-		// arraylist_append(arraylist,&a);
-		// arraylist_append(arraylist,&b);
-		// arraylist_append(arraylist,&c);
-		// arraylist_append(arraylist,&d);
-		// arraylist_append(arraylist,&e);
+		arraylist_t * arraylist = arraylist_new();
+		arraylist_append(arraylist,&a);
+		arraylist_append(arraylist,&b);
+		arraylist_append(arraylist,&c);
+		arraylist_append(arraylist,&d);
+		arraylist_append(arraylist,&e);
 
-		// arraylist_append(arraylist,&f);
+		arraylist_append(arraylist,&f);
 
-		// arraylist_print(arraylist,intprintfn);
+		arraylist_print(arraylist,intprintfn);
 
-		// arraylist_delete(arraylist,1);
-		// arraylist_print(arraylist,intprintfn);
-		// arraylist_remove(arraylist,&c,intcmpfn);
-		// arraylist_print(arraylist,intprintfn);
+		arraylist_delete(arraylist,1);
+		arraylist_print(arraylist,intprintfn);
+		arraylist_remove(arraylist,&c,intcmpfn);
+		arraylist_print(arraylist,intprintfn);
 
-		// arraylist_insert(arraylist,0,&c);
-		// arraylist_print(arraylist,intprintfn);
+		arraylist_insert(arraylist,0,&c);
+		arraylist_print(arraylist,intprintfn);
 
-		// arraylist_free(arraylist);
+		arraylist_free(arraylist);
+
 
 	//stack tests
 		// stack_t * stack = stack_new();
@@ -196,7 +197,9 @@ int main(){
 		// string_print(string);
 
 	//double linked list
-	
+		//no tests
+
+
 
 	return 0;
 }

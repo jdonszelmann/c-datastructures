@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['data',['data',['../structstack.html#a182563f1c44bfd1cb7eb69b973a09d8f',1,'stack']]]
+  ['currentlastitem',['currentlastitem',['../structarray.html#acbdafa635ab5e3de2cca1a01f1aed076',1,'array']]]
 ];
