@@ -232,6 +232,7 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>add an item to the end of the arraylist </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -264,6 +265,7 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>removes all items from an arraylist without removing the arraylist frame. use for speed optimalisation. <em>WATCH OUT</em> does not free items in the arraylist </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -296,6 +298,7 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>removes all items from an arraylist without removing the arraylist frame. use for speed optimalisation. <em>WATCH OUT</em> frees all items in arraylist. external references to these items will be INVALIDATED </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -344,6 +347,7 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>the same as arraylist_find != -1. also needs a comparefn </p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -376,6 +380,7 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>generates a new arralist with in it a reference to all items in the original arraylist </p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -426,6 +431,7 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>removes the value at an index </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -468,6 +474,7 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>joins two arraylists together end to end </p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -516,6 +523,7 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>find an item in the arraylist. give a comparefn that takes 2 void pointers and returns a boolean if they are equal. like that the function can actually find the item. will return the index of the first match </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -548,6 +556,7 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>cleans up all memory used by the arraylist. <em>WATCH OUT</em> does not free items in the arraylist. use arraylist_freeall for this. </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -580,6 +589,7 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>cleans up all memory used by the arraylist including the memory taken up by the items. WATCH OUT* make sure that no other references exist or are used to the items in the arraylist. these will be INVALIDATED </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -622,6 +632,7 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>cleans up all memory used by the arraylist. before cleaning up this calls a custom function on every item in the arraylist supplied which is responsible for cleaning up memory used by arraylist items </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -664,6 +675,7 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>get value at index </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -712,6 +724,7 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>insert an item at a certain index </p>
 
 </div>
 </div>
@@ -736,6 +749,7 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>returns the current length of the arraylist </p>
 
 </div>
 </div>
@@ -802,6 +816,7 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>calls the printfn on every item. printfn is a function expecting 1 void pointer to print </p>
 
 </div>
 </div>
@@ -836,6 +851,7 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>same as arraylist_print without the trailing newline </p>
 
 </div>
 </div>
@@ -876,6 +892,7 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>removes the first index returned by arralist_find. needs a comparefn </p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -924,6 +941,7 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>removes all items found by arraylist_find </p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -972,13 +990,14 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>set value at index </p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 21 2018 12:32:58 for C Datastructures by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Oct 21 2018 12:51:57 for C Datastructures by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
