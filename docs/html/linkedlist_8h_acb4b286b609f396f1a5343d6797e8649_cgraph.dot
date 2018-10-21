@@ -9,8 +9,4 @@ digraph "linkedlist_remove"
   Node2 [label="linkedlist_find",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$linkedlist_8h.html#ad1335de08e0eb643decaa14f11566ae8"];
   Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node3 [label="linkedlist_delete",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$linkedlist_8h.html#af1609596885dddc6f67ed0d76dcac826"];
-  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node4 [label="linkedlist_link_free",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$linkedlist_8h.html#a99dea7659433a784546fe9107cee6891"];
-  Node3 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node5 [label="linkedlist_seek",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$linkedlist_8h.html#ac882cb489de4e5c02ff8a8453846dd8f"];
 }

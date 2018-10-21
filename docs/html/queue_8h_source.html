@@ -126,7 +126,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">return</span> queue;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="queue_8h.html#a236935193aa854f0ce869da29662c949">   38</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="queue_8h.html#a236935193aa854f0ce869da29662c949">queue_resize</a>(<a class="code" href="structqueue.html">queue_t</a> * <a class="code" href="structqueue.html">queue</a>,<span class="keywordtype">int</span> newsize){</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> queue_resize(<a class="code" href="structqueue.html">queue_t</a> * <a class="code" href="structqueue.html">queue</a>,<span class="keywordtype">int</span> newsize){</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    queue-&gt;<a class="code" href="structqueue.html#aeebb048f43c062866725736ee4411bf4">value</a> = realloc(queue-&gt;<a class="code" href="structqueue.html#aeebb048f43c062866725736ee4411bf4">value</a>,newsize*<span class="keyword">sizeof</span>(<span class="keywordtype">void</span> *));</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    queue-&gt;<a class="code" href="structqueue.html#afb9096840ba43e124b3a58648db557cc">size</a> = newsize;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
@@ -139,7 +139,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    queue-&gt;<a class="code" href="structqueue.html#a9c87b9ff155122db17de326f322b18ea">filled</a>-=offset;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    queue-&gt;<a class="code" href="structqueue.html#a6c3e7c6ec6711821b695e37ddba3e3e5">emptyoffset</a>=0;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">if</span>(queue-&gt;<a class="code" href="structqueue.html#a9c87b9ff155122db17de326f322b18ea">filled</a> &lt; queue-&gt;<a class="code" href="structqueue.html#afb9096840ba43e124b3a58648db557cc">size</a> / 2){</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <a class="code" href="queue_8h.html#a236935193aa854f0ce869da29662c949">queue_resize</a>(queue,queue-&gt;<a class="code" href="structqueue.html#afb9096840ba43e124b3a58648db557cc">size</a>/2);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        queue_resize(queue,queue-&gt;<a class="code" href="structqueue.html#afb9096840ba43e124b3a58648db557cc">size</a>/2);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
@@ -166,7 +166,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
 <div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="queue_8h.html#aaa5f0c1b3065281d9f8b89c7e3279ed9">   76</a></span>&#160;<span class="keyword">extern</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="queue_8h.html#aaa5f0c1b3065281d9f8b89c7e3279ed9">queue_enqueue</a>(<a class="code" href="structqueue.html">queue_t</a> * <a class="code" href="structqueue.html">queue</a>,<span class="keywordtype">void</span> * value){</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">if</span>(queue-&gt;<a class="code" href="structqueue.html#a9c87b9ff155122db17de326f322b18ea">filled</a> &gt;= queue-&gt;<a class="code" href="structqueue.html#afb9096840ba43e124b3a58648db557cc">size</a>){</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <a class="code" href="queue_8h.html#a236935193aa854f0ce869da29662c949">queue_resize</a>(queue,queue-&gt;<a class="code" href="structqueue.html#afb9096840ba43e124b3a58648db557cc">size</a>*2);  </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        queue_resize(queue,queue-&gt;<a class="code" href="structqueue.html#afb9096840ba43e124b3a58648db557cc">size</a>*2);  </div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    }</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    queue-&gt;<a class="code" href="structqueue.html#aeebb048f43c062866725736ee4411bf4">value</a>[queue-&gt;<a class="code" href="structqueue.html#a9c87b9ff155122db17de326f322b18ea">filled</a>] = value;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    queue-&gt;<a class="code" href="structqueue.html#a9c87b9ff155122db17de326f322b18ea">filled</a>++;</div>
@@ -255,7 +255,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="types_8h_html"><div class="ttname"><a href="types_8h.html">types.h</a></div></div>
 <div class="ttc" id="queue_8h_html_a35a3ff30fd69e06769ca77b28d4796ba"><div class="ttname"><a href="queue_8h.html#a35a3ff30fd69e06769ca77b28d4796ba">QUEUE_STARTSIZE</a></div><div class="ttdeci">#define QUEUE_STARTSIZE</div><div class="ttdef"><b>Definition:</b> queue.h:14</div></div>
 <div class="ttc" id="string_8h_html"><div class="ttname"><a href="string_8h.html">string.h</a></div></div>
-<div class="ttc" id="queue_8h_html_a236935193aa854f0ce869da29662c949"><div class="ttname"><a href="queue_8h.html#a236935193aa854f0ce869da29662c949">queue_resize</a></div><div class="ttdeci">static void queue_resize(queue_t *queue, int newsize)</div><div class="ttdef"><b>Definition:</b> queue.h:38</div></div>
 <div class="ttc" id="queue_8h_html_a3ff938294eb518d999e7174526725204"><div class="ttname"><a href="queue_8h.html#a3ff938294eb518d999e7174526725204">queue_rebase</a></div><div class="ttdeci">void queue_rebase(queue_t *queue)</div><div class="ttdef"><b>Definition:</b> queue.h:43</div></div>
 <div class="ttc" id="queue_8h_html_aa8acf648f3b0c69d7e132fcc61dc58c7"><div class="ttname"><a href="queue_8h.html#aa8acf648f3b0c69d7e132fcc61dc58c7">queue_t</a></div><div class="ttdeci">struct queue queue_t</div></div>
 <div class="ttc" id="queue_8h_html_aaa5f0c1b3065281d9f8b89c7e3279ed9"><div class="ttname"><a href="queue_8h.html#aaa5f0c1b3065281d9f8b89c7e3279ed9">queue_enqueue</a></div><div class="ttdeci">void queue_enqueue(queue_t *queue, void *value)</div><div class="ttdef"><b>Definition:</b> queue.h:76</div></div>
@@ -283,7 +282,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 21 2018 12:28:32 for C Datastructures by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Oct 21 2018 12:32:58 for C Datastructures by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

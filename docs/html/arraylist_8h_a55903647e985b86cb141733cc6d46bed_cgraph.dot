@@ -8,12 +8,7 @@ digraph "arraylist_removeall"
   Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node2 [label="arraylist_new",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$arraylist_8h.html#a0f3dce9a4ff6eec624a885cab52d5cb1"];
   Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node3 [label="arraylist_findn",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$arraylist_8h.html#a9512f6664e62ec3e9484eae432daed98"];
+  Node3 [label="arraylist_append",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$arraylist_8h.html#ac567053ff89cc5cae2050d9a7a844c6a"];
   Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node4 [label="arraylist_append",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$arraylist_8h.html#ac567053ff89cc5cae2050d9a7a844c6a"];
-  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node5 [label="arraylist_resize",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$arraylist_8h.html#a6d47af225b71d94985c9ceca938e7890"];
-  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node6 [label="arraylist_delete",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$arraylist_8h.html#a31d5ded3b02e6c86120565ea127a8235"];
-  Node6 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="arraylist_delete",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$arraylist_8h.html#a31d5ded3b02e6c86120565ea127a8235"];
 }

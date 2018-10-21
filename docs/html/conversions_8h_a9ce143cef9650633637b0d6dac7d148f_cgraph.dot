@@ -11,6 +11,4 @@ digraph "linkedlist_tostack"
   Node3 [label="arraylist_new",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$arraylist_8h.html#a0f3dce9a4ff6eec624a885cab52d5cb1"];
   Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node4 [label="arraylist_append",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$arraylist_8h.html#ac567053ff89cc5cae2050d9a7a844c6a"];
-  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node5 [label="arraylist_resize",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$arraylist_8h.html#a6d47af225b71d94985c9ceca938e7890"];
 }

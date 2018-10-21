@@ -194,7 +194,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <a class="code" href="bintree_8h.html#a1b571d5d9225f68d9148c8207b87ec02">binarytree_setvalue</a>(node-&gt;<a class="code" href="structbinarytree.html#a00ed899696bf93174f38e2973ee95ac5">right</a>,value);</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;}</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
-<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="bintree_8h.html#ab18527e89d4574c5e91dca7e150eea28">  106</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="bintree_8h.html#ab18527e89d4574c5e91dca7e150eea28">binarytree_print_helper</a>(<a class="code" href="structbinarytree.html">binarytree_t</a> * node,<a class="code" href="types_8h.html#a06d836e104988fed0461b03319344b02">printfn_t</a> printfn,<span class="keywordtype">int</span> indent){</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> binarytree_print_helper(<a class="code" href="structbinarytree.html">binarytree_t</a> * node,<a class="code" href="types_8h.html#a06d836e104988fed0461b03319344b02">printfn_t</a> printfn,<span class="keywordtype">int</span> indent){</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordflow">if</span>(node == NULL){</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    }</div>
@@ -207,25 +207,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        printfn(node-&gt;<a class="code" href="structbinarytree.html#a740856b9d99040c0e9c272b2c0d84709">value</a>);</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    }</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    printf(<span class="stringliteral">&quot;\n&quot;</span>);</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <a class="code" href="bintree_8h.html#ab18527e89d4574c5e91dca7e150eea28">binarytree_print_helper</a>(node-&gt;<a class="code" href="structbinarytree.html#a52215d95b0d68fdc2aaf5f39099c9786">left</a>,printfn,indent+1);</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <a class="code" href="bintree_8h.html#ab18527e89d4574c5e91dca7e150eea28">binarytree_print_helper</a>(node-&gt;<a class="code" href="structbinarytree.html#a00ed899696bf93174f38e2973ee95ac5">right</a>,printfn,indent+1);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    binarytree_print_helper(node-&gt;<a class="code" href="structbinarytree.html#a52215d95b0d68fdc2aaf5f39099c9786">left</a>,printfn,indent+1);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    binarytree_print_helper(node-&gt;<a class="code" href="structbinarytree.html#a00ed899696bf93174f38e2973ee95ac5">right</a>,printfn,indent+1);</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;}</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
 <div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="bintree_8h.html#aea5f4839736b48dad84285e30f7c4fe8">  123</a></span>&#160;<span class="keyword">extern</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="bintree_8h.html#aea5f4839736b48dad84285e30f7c4fe8">binarytree_print</a>(<a class="code" href="structbinarytree.html">binarytree_t</a> * root, <a class="code" href="types_8h.html#a06d836e104988fed0461b03319344b02">printfn_t</a> printfn){</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordflow">if</span>(root == NULL){</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    }</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <a class="code" href="bintree_8h.html#ab18527e89d4574c5e91dca7e150eea28">binarytree_print_helper</a>(root,printfn,0);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    binarytree_print_helper(root,printfn,0);</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;}</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
-<div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="bintree_8h.html#ab059938725b35eb1df4d22473233beab">  130</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="bintree_8h.html#ab059938725b35eb1df4d22473233beab">binarytree_free_node</a>(<a class="code" href="structbinarytree.html">binarytree_t</a> * node){</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> binarytree_free_node(<a class="code" href="structbinarytree.html">binarytree_t</a> * node){</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keywordflow">if</span>(node == NULL){</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    }</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    free(node);</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;}</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
-<div class="line"><a name="l00137"></a><span class="lineno"><a class="line" href="bintree_8h.html#a0eb4250f1272c15848661bae151f7b31">  137</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="bintree_8h.html#a0eb4250f1272c15848661bae151f7b31">binarytree_freeall_node</a>(<a class="code" href="structbinarytree.html">binarytree_t</a> * node){</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> binarytree_freeall_node(<a class="code" href="structbinarytree.html">binarytree_t</a> * node){</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keywordflow">if</span>(node == NULL){</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    }</div>
@@ -239,7 +239,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    }</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <a class="code" href="bintree_8h.html#a70d34600d4b943575761e2cc281ab0ea">binarytree_free</a>(root-&gt;<a class="code" href="structbinarytree.html#a52215d95b0d68fdc2aaf5f39099c9786">left</a>);</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <a class="code" href="bintree_8h.html#a70d34600d4b943575761e2cc281ab0ea">binarytree_free</a>(root-&gt;<a class="code" href="structbinarytree.html#a00ed899696bf93174f38e2973ee95ac5">right</a>);</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <a class="code" href="bintree_8h.html#ab059938725b35eb1df4d22473233beab">binarytree_free_node</a>(root); </div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    binarytree_free_node(root); </div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;}</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
 <div class="line"><a name="l00154"></a><span class="lineno"><a class="line" href="bintree_8h.html#a50ddcd0a04d2db4813bf7c0328c8a65a">  154</a></span>&#160;<span class="keyword">extern</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="bintree_8h.html#a50ddcd0a04d2db4813bf7c0328c8a65a">binarytree_freeall</a>(<a class="code" href="structbinarytree.html">binarytree_t</a> * root){</div>
@@ -248,7 +248,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    }</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <a class="code" href="bintree_8h.html#a50ddcd0a04d2db4813bf7c0328c8a65a">binarytree_freeall</a>(root-&gt;<a class="code" href="structbinarytree.html#a52215d95b0d68fdc2aaf5f39099c9786">left</a>);</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <a class="code" href="bintree_8h.html#a50ddcd0a04d2db4813bf7c0328c8a65a">binarytree_freeall</a>(root-&gt;<a class="code" href="structbinarytree.html#a00ed899696bf93174f38e2973ee95ac5">right</a>);</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <a class="code" href="bintree_8h.html#a0eb4250f1272c15848661bae151f7b31">binarytree_freeall_node</a>(root);</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    binarytree_freeall_node(root);</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;}</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
 <div class="line"><a name="l00163"></a><span class="lineno"><a class="line" href="bintree_8h.html#a6ca4bb0be1349e414e1aff41638f6eb1">  163</a></span>&#160;<span class="keyword">extern</span> <span class="keyword">inline</span> <a class="code" href="structbinarytree.html">binarytree_t</a> * <a class="code" href="bintree_8h.html#a6ca4bb0be1349e414e1aff41638f6eb1">binarytree_path</a>(<a class="code" href="structbinarytree.html">binarytree_t</a> * root,<span class="keywordtype">char</span> * path){</div>
@@ -317,14 +317,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="structbinarytree_html_a740856b9d99040c0e9c272b2c0d84709"><div class="ttname"><a href="structbinarytree.html#a740856b9d99040c0e9c272b2c0d84709">binarytree::value</a></div><div class="ttdeci">void * value</div><div class="ttdef"><b>Definition:</b> bintree.h:17</div></div>
 <div class="ttc" id="types_8h_html"><div class="ttname"><a href="types_8h.html">types.h</a></div></div>
-<div class="ttc" id="bintree_8h_html_a0eb4250f1272c15848661bae151f7b31"><div class="ttname"><a href="bintree_8h.html#a0eb4250f1272c15848661bae151f7b31">binarytree_freeall_node</a></div><div class="ttdeci">static void binarytree_freeall_node(binarytree_t *node)</div><div class="ttdef"><b>Definition:</b> bintree.h:137</div></div>
 <div class="ttc" id="bintree_8h_html_aac87f91cbb6fe2cc808712fe4faadc43"><div class="ttname"><a href="bintree_8h.html#aac87f91cbb6fe2cc808712fe4faadc43">binarytree_rightchild</a></div><div class="ttdeci">void binarytree_rightchild(binarytree_t *node)</div><div class="ttdef"><b>Definition:</b> bintree.h:72</div></div>
 <div class="ttc" id="string_8h_html"><div class="ttname"><a href="string_8h.html">string.h</a></div></div>
 <div class="ttc" id="bintree_8h_html_ae8a180180a2f35cf6f6bda81a9546736"><div class="ttname"><a href="bintree_8h.html#ae8a180180a2f35cf6f6bda81a9546736">binarytree_new</a></div><div class="ttdeci">binarytree_t * binarytree_new()</div><div class="ttdef"><b>Definition:</b> bintree.h:22</div></div>
 <div class="ttc" id="bintree_8h_html_a7b5f60783061c4034c4efb8f1b0ac6a3"><div class="ttname"><a href="bintree_8h.html#a7b5f60783061c4034c4efb8f1b0ac6a3">binarytree_breadth_first_search</a></div><div class="ttdeci">binarytree_t * binarytree_breadth_first_search(binarytree_t *root, void *value, comparefn_t comparefn)</div><div class="ttdef"><b>Definition:</b> bintree.h:181</div></div>
 <div class="ttc" id="bintree_8h_html_aea5f4839736b48dad84285e30f7c4fe8"><div class="ttname"><a href="bintree_8h.html#aea5f4839736b48dad84285e30f7c4fe8">binarytree_print</a></div><div class="ttdeci">void binarytree_print(binarytree_t *root, printfn_t printfn)</div><div class="ttdef"><b>Definition:</b> bintree.h:123</div></div>
 <div class="ttc" id="bintree_8h_html_a50ddcd0a04d2db4813bf7c0328c8a65a"><div class="ttname"><a href="bintree_8h.html#a50ddcd0a04d2db4813bf7c0328c8a65a">binarytree_freeall</a></div><div class="ttdeci">void binarytree_freeall(binarytree_t *root)</div><div class="ttdef"><b>Definition:</b> bintree.h:154</div></div>
-<div class="ttc" id="bintree_8h_html_ab18527e89d4574c5e91dca7e150eea28"><div class="ttname"><a href="bintree_8h.html#ab18527e89d4574c5e91dca7e150eea28">binarytree_print_helper</a></div><div class="ttdeci">static void binarytree_print_helper(binarytree_t *node, printfn_t printfn, int indent)</div><div class="ttdef"><b>Definition:</b> bintree.h:106</div></div>
 <div class="ttc" id="bintree_8h_html_ab3bea35bfd6f4b9063bd7c3a8784bd30"><div class="ttname"><a href="bintree_8h.html#ab3bea35bfd6f4b9063bd7c3a8784bd30">binarytree_getvalue</a></div><div class="ttdeci">void * binarytree_getvalue(binarytree_t *node)</div><div class="ttdef"><b>Definition:</b> bintree.h:40</div></div>
 <div class="ttc" id="structbinarytree_html_a00ed899696bf93174f38e2973ee95ac5"><div class="ttname"><a href="structbinarytree.html#a00ed899696bf93174f38e2973ee95ac5">binarytree::right</a></div><div class="ttdeci">struct binarytree * right</div><div class="ttdef"><b>Definition:</b> bintree.h:19</div></div>
 <div class="ttc" id="types_8h_html_a6eb913185d0534a960d9798cfe7b0f08"><div class="ttname"><a href="types_8h.html#a6eb913185d0534a960d9798cfe7b0f08">comparefn_t</a></div><div class="ttdeci">int(* comparefn_t)(void *, void *)</div><div class="ttdef"><b>Definition:</b> types.h:6</div></div>
@@ -339,7 +337,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="structbinarytree_html_a52215d95b0d68fdc2aaf5f39099c9786"><div class="ttname"><a href="structbinarytree.html#a52215d95b0d68fdc2aaf5f39099c9786">binarytree::left</a></div><div class="ttdeci">struct binarytree * left</div><div class="ttdef"><b>Definition:</b> bintree.h:18</div></div>
 <div class="ttc" id="bintree_8h_html_a1b571d5d9225f68d9148c8207b87ec02"><div class="ttname"><a href="bintree_8h.html#a1b571d5d9225f68d9148c8207b87ec02">binarytree_setvalue</a></div><div class="ttdeci">void binarytree_setvalue(binarytree_t *node, void *value)</div><div class="ttdef"><b>Definition:</b> bintree.h:32</div></div>
 <div class="ttc" id="bintree_8h_html_a8561e12420d815e172746595281ae86c"><div class="ttname"><a href="bintree_8h.html#a8561e12420d815e172746595281ae86c">binarytree_left</a></div><div class="ttdeci">binarytree_t * binarytree_left(binarytree_t *node)</div><div class="ttdef"><b>Definition:</b> bintree.h:47</div></div>
-<div class="ttc" id="bintree_8h_html_ab059938725b35eb1df4d22473233beab"><div class="ttname"><a href="bintree_8h.html#ab059938725b35eb1df4d22473233beab">binarytree_free_node</a></div><div class="ttdeci">static void binarytree_free_node(binarytree_t *node)</div><div class="ttdef"><b>Definition:</b> bintree.h:130</div></div>
 <div class="ttc" id="bintree_8h_html_a2233357978a51df1376b37dd28a5e11f"><div class="ttname"><a href="bintree_8h.html#a2233357978a51df1376b37dd28a5e11f">binarytree_rightchild_setvalue</a></div><div class="ttdeci">void binarytree_rightchild_setvalue(binarytree_t *node, void *value)</div><div class="ttdef"><b>Definition:</b> bintree.h:94</div></div>
 <div class="ttc" id="bintree_8h_html_a89ddadbd95c055a2d2dcf210b07bb44f"><div class="ttname"><a href="bintree_8h.html#a89ddadbd95c055a2d2dcf210b07bb44f">binarytree_t</a></div><div class="ttdeci">struct binarytree binarytree_t</div></div>
 <div class="ttc" id="bintree_8h_html_a10d8f5ea38435076afb25751d40b216e"><div class="ttname"><a href="bintree_8h.html#a10d8f5ea38435076afb25751d40b216e">binarytree_getparent</a></div><div class="ttdeci">binarytree_t * binarytree_getparent(binarytree_t *root, binarytree_t *node)</div><div class="ttdef"><b>Definition:</b> bintree.h:203</div></div>
@@ -347,7 +344,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 21 2018 12:28:31 for C Datastructures by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Oct 21 2018 12:32:58 for C Datastructures by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

@@ -21,6 +21,10 @@ typedef struct arraylist{
 	int filled;
 }arraylist_t;
 
+
+/*!
+ generate a new (empty) arraylist
+*/
 extern inline arraylist_t * arraylist_new(){
 	arraylist_t * arraylist = malloc(sizeof(arraylist_t));
 	*arraylist = (arraylist_t){
@@ -31,6 +35,9 @@ extern inline arraylist_t * arraylist_new(){
 	return arraylist;
 }
 
+/*!
+ generate a new (empty) arraylist
+*/
 static inline void arraylist_resize(arraylist_t * arraylist,int newsize){
 	arraylist->value = realloc(arraylist->value,newsize*sizeof(void *));
 	arraylist->size = newsize;

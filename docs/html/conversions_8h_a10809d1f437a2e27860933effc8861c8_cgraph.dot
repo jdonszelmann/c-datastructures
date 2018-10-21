@@ -9,6 +9,4 @@ digraph "linkedlist_toqueue"
   Node2 [label="queue_new",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$queue_8h.html#a217fbe3b1f9577519fd427b2dd1d3455"];
   Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node3 [label="queue_enqueue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$queue_8h.html#aaa5f0c1b3065281d9f8b89c7e3279ed9"];
-  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node4 [label="queue_resize",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$queue_8h.html#a236935193aa854f0ce869da29662c949"];
 }
