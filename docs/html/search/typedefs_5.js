@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['printfn_5ft',['printfn_t',['../types_8h.html#a06d836e104988fed0461b03319344b02',1,'types.h']]]
+  ['linkedlist_5flink_5ft',['linkedlist_link_t',['../linkedlist_8h.html#ac8ba75a1991f576fa049fd1cc4f9fc38',1,'linkedlist.h']]],
+  ['linkedlist_5ft',['linkedlist_t',['../linkedlist_8h.html#a31da752105272f0d8057aedf50f27f2b',1,'linkedlist.h']]]
 ];

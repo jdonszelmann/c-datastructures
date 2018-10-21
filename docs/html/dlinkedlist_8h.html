@@ -85,16 +85,906 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">dlinkedlist.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;stdbool.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="string_8h_source.html">string.h</a>&gt;</code><br />
+<code>#include &quot;<a class="el" href="datastructures_8h_source.html">datastructures.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="types_8h_source.html">types.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for dlinkedlist.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="dlinkedlist_8h__incl.png" border="0" usemap="#datastructures_2dlinkedlist_8h" alt=""/></div>
+<!-- MAP 0 -->
+</div>
+</div>
 <p><a href="dlinkedlist_8h_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdlinkedlist__link.html">dlinkedlist_link</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdlinkedlist.html">dlinkedlist</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:af6f8f9ead794b5d79104e49d32ca9b16"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dlinkedlist_8h.html#af6f8f9ead794b5d79104e49d32ca9b16">dlinkedlist_foreach</a>(__value,  __list)&#160;&#160;&#160;for(<a class="el" href="dlinkedlist_8h.html#a9b13d6edc45d330f7ddb13141926da87">dlinkedlist_link_t</a> * __value=__list-&gt;HEAD;__value!=NULL;__value=__value-&gt;next)</td></tr>
+<tr class="memdesc:af6f8f9ead794b5d79104e49d32ca9b16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides single linked lists.  <a href="#af6f8f9ead794b5d79104e49d32ca9b16">More...</a><br /></td></tr>
+<tr class="separator:af6f8f9ead794b5d79104e49d32ca9b16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3385b94bcaa2879dfc18439435f3e2fa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dlinkedlist_8h.html#a3385b94bcaa2879dfc18439435f3e2fa">dlinkedlist_foreach_reverse</a>(__value,  __list)&#160;&#160;&#160;for(<a class="el" href="dlinkedlist_8h.html#a9b13d6edc45d330f7ddb13141926da87">dlinkedlist_link_t</a> * __value=__list-&gt;TAIL;__value!=NULL;__value=__value-&gt;prev)</td></tr>
+<tr class="separator:a3385b94bcaa2879dfc18439435f3e2fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a9b13d6edc45d330f7ddb13141926da87"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structdlinkedlist__link.html">dlinkedlist_link</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dlinkedlist_8h.html#a9b13d6edc45d330f7ddb13141926da87">dlinkedlist_link_t</a></td></tr>
+<tr class="separator:a9b13d6edc45d330f7ddb13141926da87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc8b1a7cee59064e48576e859c375219"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structdlinkedlist.html">dlinkedlist</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dlinkedlist_8h.html#acc8b1a7cee59064e48576e859c375219">dlinkedlist_t</a></td></tr>
+<tr class="separator:acc8b1a7cee59064e48576e859c375219"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a0d8edc8df7850bb65e7cdb0c19bd33f1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="dlinkedlist_8h.html#acc8b1a7cee59064e48576e859c375219">dlinkedlist_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dlinkedlist_8h.html#a0d8edc8df7850bb65e7cdb0c19bd33f1">dlinkedlist_new</a> ()</td></tr>
+<tr class="separator:a0d8edc8df7850bb65e7cdb0c19bd33f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcfe1d7d98e9b7e5dd413cff8d655417"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dlinkedlist_8h.html#afcfe1d7d98e9b7e5dd413cff8d655417">dlinkedlist_setvalue</a> (<a class="el" href="dlinkedlist_8h.html#acc8b1a7cee59064e48576e859c375219">dlinkedlist_t</a> *list, int index, void *value)</td></tr>
+<tr class="separator:afcfe1d7d98e9b7e5dd413cff8d655417"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a676f641fb1430f6743ba4003d6d12bad"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dlinkedlist_8h.html#a676f641fb1430f6743ba4003d6d12bad">dlinkedlist_getvalue</a> (<a class="el" href="dlinkedlist_8h.html#acc8b1a7cee59064e48576e859c375219">dlinkedlist_t</a> *list, int index)</td></tr>
+<tr class="separator:a676f641fb1430f6743ba4003d6d12bad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d9a25deab569a4999b8e71a95a6d8cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dlinkedlist_8h.html#a9d9a25deab569a4999b8e71a95a6d8cc">dlinkedlist_append</a> (<a class="el" href="dlinkedlist_8h.html#acc8b1a7cee59064e48576e859c375219">dlinkedlist_t</a> *list, void *value)</td></tr>
+<tr class="separator:a9d9a25deab569a4999b8e71a95a6d8cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9403016b37175ab7d1399bf8d559172c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dlinkedlist_8h.html#a9403016b37175ab7d1399bf8d559172c">dlinkedlist_freeall</a> (<a class="el" href="dlinkedlist_8h.html#acc8b1a7cee59064e48576e859c375219">dlinkedlist_t</a> *list)</td></tr>
+<tr class="separator:a9403016b37175ab7d1399bf8d559172c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a201438060b3343d9b9943b7038a89d72"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dlinkedlist_8h.html#a201438060b3343d9b9943b7038a89d72">dlinkedlist_freefunc</a> (<a class="el" href="dlinkedlist_8h.html#acc8b1a7cee59064e48576e859c375219">dlinkedlist_t</a> *list, <a class="el" href="types_8h.html#ad9ea42f1a4bf2086d7cc0162dbe0777e">freefunc_t</a> freefunc)</td></tr>
+<tr class="separator:a201438060b3343d9b9943b7038a89d72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cfc926527260187f63dc35a75a8936b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dlinkedlist_8h.html#a7cfc926527260187f63dc35a75a8936b">dlinkedlist_free</a> (<a class="el" href="dlinkedlist_8h.html#acc8b1a7cee59064e48576e859c375219">dlinkedlist_t</a> *list)</td></tr>
+<tr class="separator:a7cfc926527260187f63dc35a75a8936b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaff346ac849a8bd894a6f58e50ec5fa9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dlinkedlist_8h.html#aaff346ac849a8bd894a6f58e50ec5fa9">dlinkedlist_find</a> (<a class="el" href="dlinkedlist_8h.html#acc8b1a7cee59064e48576e859c375219">dlinkedlist_t</a> *list, void *value, <a class="el" href="types_8h.html#a6eb913185d0534a960d9798cfe7b0f08">comparefn_t</a> comparefn)</td></tr>
+<tr class="separator:aaff346ac849a8bd894a6f58e50ec5fa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9f9c99b9d453971954ec776b1dd854d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dlinkedlist_8h.html#af9f9c99b9d453971954ec776b1dd854d">dlinkedlist_contains</a> (<a class="el" href="dlinkedlist_8h.html#acc8b1a7cee59064e48576e859c375219">dlinkedlist_t</a> *list, void *value, <a class="el" href="types_8h.html#a6eb913185d0534a960d9798cfe7b0f08">comparefn_t</a> comparefn)</td></tr>
+<tr class="separator:af9f9c99b9d453971954ec776b1dd854d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af95cbe6725ac6d410a66d395da23caad"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dlinkedlist_8h.html#af95cbe6725ac6d410a66d395da23caad">dlinkedlist_length</a> (<a class="el" href="dlinkedlist_8h.html#acc8b1a7cee59064e48576e859c375219">dlinkedlist_t</a> *list)</td></tr>
+<tr class="separator:af95cbe6725ac6d410a66d395da23caad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a727a40b5c63a81f6c80ad601bf3ef6e6"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dlinkedlist_8h.html#a727a40b5c63a81f6c80ad601bf3ef6e6">dlinkedlist_delete</a> (<a class="el" href="dlinkedlist_8h.html#acc8b1a7cee59064e48576e859c375219">dlinkedlist_t</a> *list, int index)</td></tr>
+<tr class="separator:a727a40b5c63a81f6c80ad601bf3ef6e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4482cab40fed8c8f22e413a5fb2139b9"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dlinkedlist_8h.html#a4482cab40fed8c8f22e413a5fb2139b9">dlinkedlist_remove</a> (<a class="el" href="dlinkedlist_8h.html#acc8b1a7cee59064e48576e859c375219">dlinkedlist_t</a> *list, void *value, <a class="el" href="types_8h.html#a6eb913185d0534a960d9798cfe7b0f08">comparefn_t</a> comparefn)</td></tr>
+<tr class="separator:a4482cab40fed8c8f22e413a5fb2139b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3259a6302a06dac596973d5ed8159972"><td class="memItemLeft" align="right" valign="top"><a class="el" href="dlinkedlist_8h.html#acc8b1a7cee59064e48576e859c375219">dlinkedlist_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dlinkedlist_8h.html#a3259a6302a06dac596973d5ed8159972">dlinkedlist_removeall</a> (<a class="el" href="dlinkedlist_8h.html#acc8b1a7cee59064e48576e859c375219">dlinkedlist_t</a> *list, void *value, <a class="el" href="types_8h.html#a6eb913185d0534a960d9798cfe7b0f08">comparefn_t</a> comparefn)</td></tr>
+<tr class="separator:a3259a6302a06dac596973d5ed8159972"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55c0a15b38cafdd7988ccca8d9437054"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dlinkedlist_8h.html#a55c0a15b38cafdd7988ccca8d9437054">dlinkedlist_insert</a> (<a class="el" href="dlinkedlist_8h.html#acc8b1a7cee59064e48576e859c375219">dlinkedlist_t</a> *list, int index, void *value)</td></tr>
+<tr class="separator:a55c0a15b38cafdd7988ccca8d9437054"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adac8101ad9733d439b3b9bbce28d5091"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dlinkedlist_8h.html#adac8101ad9733d439b3b9bbce28d5091">dlinkedlist_print</a> (<a class="el" href="dlinkedlist_8h.html#acc8b1a7cee59064e48576e859c375219">dlinkedlist_t</a> *list, <a class="el" href="types_8h.html#a06d836e104988fed0461b03319344b02">printfn_t</a> printfn)</td></tr>
+<tr class="separator:adac8101ad9733d439b3b9bbce28d5091"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6e7e421ef3d436f306f2f04c75f5439"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dlinkedlist_8h.html#ac6e7e421ef3d436f306f2f04c75f5439">dlinkedlist_print_nonewline</a> (<a class="el" href="dlinkedlist_8h.html#acc8b1a7cee59064e48576e859c375219">dlinkedlist_t</a> *list, <a class="el" href="types_8h.html#a06d836e104988fed0461b03319344b02">printfn_t</a> printfn)</td></tr>
+<tr class="separator:ac6e7e421ef3d436f306f2f04c75f5439"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4a42243a5d46ccaec4f460463f843c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="dlinkedlist_8h.html#acc8b1a7cee59064e48576e859c375219">dlinkedlist_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dlinkedlist_8h.html#ae4a42243a5d46ccaec4f460463f843c5">dlinkedlist_copy</a> (<a class="el" href="dlinkedlist_8h.html#acc8b1a7cee59064e48576e859c375219">dlinkedlist_t</a> *list)</td></tr>
+<tr class="separator:ae4a42243a5d46ccaec4f460463f843c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26eca84b0e97ea3493c71df6c63e531b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dlinkedlist_8h.html#a26eca84b0e97ea3493c71df6c63e531b">dlinkedlist_extend</a> (<a class="el" href="dlinkedlist_8h.html#acc8b1a7cee59064e48576e859c375219">dlinkedlist_t</a> *list, <a class="el" href="dlinkedlist_8h.html#acc8b1a7cee59064e48576e859c375219">dlinkedlist_t</a> *other)</td></tr>
+<tr class="separator:a26eca84b0e97ea3493c71df6c63e531b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20f23a580ca4e78350cd5d41ac39a99a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dlinkedlist_8h.html#a20f23a580ca4e78350cd5d41ac39a99a">dlinkedlist_clear</a> (<a class="el" href="dlinkedlist_8h.html#acc8b1a7cee59064e48576e859c375219">dlinkedlist_t</a> *list)</td></tr>
+<tr class="separator:a20f23a580ca4e78350cd5d41ac39a99a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4abeb48a2b784ce082eaaebe49af75a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dlinkedlist_8h.html#a4abeb48a2b784ce082eaaebe49af75a2">dlinkedlist_clearall</a> (<a class="el" href="dlinkedlist_8h.html#acc8b1a7cee59064e48576e859c375219">dlinkedlist_t</a> *list)</td></tr>
+<tr class="separator:a4abeb48a2b784ce082eaaebe49af75a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="af6f8f9ead794b5d79104e49d32ca9b16"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define dlinkedlist_foreach</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__value, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__list&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;for(<a class="el" href="dlinkedlist_8h.html#a9b13d6edc45d330f7ddb13141926da87">dlinkedlist_link_t</a> * __value=__list-&gt;HEAD;__value!=NULL;__value=__value-&gt;next)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Provides single linked lists. </p>
+
+</div>
+</div>
+<a class="anchor" id="a3385b94bcaa2879dfc18439435f3e2fa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define dlinkedlist_foreach_reverse</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__value, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">__list&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;for(<a class="el" href="dlinkedlist_8h.html#a9b13d6edc45d330f7ddb13141926da87">dlinkedlist_link_t</a> * __value=__list-&gt;TAIL;__value!=NULL;__value=__value-&gt;prev)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a class="anchor" id="a9b13d6edc45d330f7ddb13141926da87"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structdlinkedlist__link.html">dlinkedlist_link</a> <a class="el" href="dlinkedlist_8h.html#a9b13d6edc45d330f7ddb13141926da87">dlinkedlist_link_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acc8b1a7cee59064e48576e859c375219"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structdlinkedlist.html">dlinkedlist</a> <a class="el" href="dlinkedlist_8h.html#acc8b1a7cee59064e48576e859c375219">dlinkedlist_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a9d9a25deab569a4999b8e71a95a6d8cc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dlinkedlist_append </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="dlinkedlist_8h.html#acc8b1a7cee59064e48576e859c375219">dlinkedlist_t</a> *&#160;</td>
+          <td class="paramname"><em>list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="dlinkedlist_8h_a9d9a25deab569a4999b8e71a95a6d8cc_icgraph.png" border="0" usemap="#dlinkedlist_8h_a9d9a25deab569a4999b8e71a95a6d8cc_icgraph" alt=""/></div>
+<!-- MAP 1 -->
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a20f23a580ca4e78350cd5d41ac39a99a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dlinkedlist_clear </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="dlinkedlist_8h.html#acc8b1a7cee59064e48576e859c375219">dlinkedlist_t</a> *&#160;</td>
+          <td class="paramname"><em>list</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4abeb48a2b784ce082eaaebe49af75a2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dlinkedlist_clearall </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="dlinkedlist_8h.html#acc8b1a7cee59064e48576e859c375219">dlinkedlist_t</a> *&#160;</td>
+          <td class="paramname"><em>list</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af9f9c99b9d453971954ec776b1dd854d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int dlinkedlist_contains </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="dlinkedlist_8h.html#acc8b1a7cee59064e48576e859c375219">dlinkedlist_t</a> *&#160;</td>
+          <td class="paramname"><em>list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a6eb913185d0534a960d9798cfe7b0f08">comparefn_t</a>&#160;</td>
+          <td class="paramname"><em>comparefn</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="dlinkedlist_8h_af9f9c99b9d453971954ec776b1dd854d_cgraph.png" border="0" usemap="#dlinkedlist_8h_af9f9c99b9d453971954ec776b1dd854d_cgraph" alt=""/></div>
+<!-- MAP 2 -->
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae4a42243a5d46ccaec4f460463f843c5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="dlinkedlist_8h.html#acc8b1a7cee59064e48576e859c375219">dlinkedlist_t</a>* dlinkedlist_copy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="dlinkedlist_8h.html#acc8b1a7cee59064e48576e859c375219">dlinkedlist_t</a> *&#160;</td>
+          <td class="paramname"><em>list</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="dlinkedlist_8h_ae4a42243a5d46ccaec4f460463f843c5_cgraph.png" border="0" usemap="#dlinkedlist_8h_ae4a42243a5d46ccaec4f460463f843c5_cgraph" alt=""/></div>
+<!-- MAP 3 -->
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a727a40b5c63a81f6c80ad601bf3ef6e6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* dlinkedlist_delete </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="dlinkedlist_8h.html#acc8b1a7cee59064e48576e859c375219">dlinkedlist_t</a> *&#160;</td>
+          <td class="paramname"><em>list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="dlinkedlist_8h_a727a40b5c63a81f6c80ad601bf3ef6e6_icgraph.png" border="0" usemap="#dlinkedlist_8h_a727a40b5c63a81f6c80ad601bf3ef6e6_icgraph" alt=""/></div>
+<!-- MAP 4 -->
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a26eca84b0e97ea3493c71df6c63e531b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dlinkedlist_extend </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="dlinkedlist_8h.html#acc8b1a7cee59064e48576e859c375219">dlinkedlist_t</a> *&#160;</td>
+          <td class="paramname"><em>list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="dlinkedlist_8h.html#acc8b1a7cee59064e48576e859c375219">dlinkedlist_t</a> *&#160;</td>
+          <td class="paramname"><em>other</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="dlinkedlist_8h_a26eca84b0e97ea3493c71df6c63e531b_cgraph.png" border="0" usemap="#dlinkedlist_8h_a26eca84b0e97ea3493c71df6c63e531b_cgraph" alt=""/></div>
+<!-- MAP 5 -->
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aaff346ac849a8bd894a6f58e50ec5fa9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int dlinkedlist_find </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="dlinkedlist_8h.html#acc8b1a7cee59064e48576e859c375219">dlinkedlist_t</a> *&#160;</td>
+          <td class="paramname"><em>list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a6eb913185d0534a960d9798cfe7b0f08">comparefn_t</a>&#160;</td>
+          <td class="paramname"><em>comparefn</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="dlinkedlist_8h_aaff346ac849a8bd894a6f58e50ec5fa9_icgraph.png" border="0" usemap="#dlinkedlist_8h_aaff346ac849a8bd894a6f58e50ec5fa9_icgraph" alt=""/></div>
+<!-- MAP 6 -->
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a7cfc926527260187f63dc35a75a8936b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dlinkedlist_free </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="dlinkedlist_8h.html#acc8b1a7cee59064e48576e859c375219">dlinkedlist_t</a> *&#160;</td>
+          <td class="paramname"><em>list</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9403016b37175ab7d1399bf8d559172c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dlinkedlist_freeall </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="dlinkedlist_8h.html#acc8b1a7cee59064e48576e859c375219">dlinkedlist_t</a> *&#160;</td>
+          <td class="paramname"><em>list</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a201438060b3343d9b9943b7038a89d72"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dlinkedlist_freefunc </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="dlinkedlist_8h.html#acc8b1a7cee59064e48576e859c375219">dlinkedlist_t</a> *&#160;</td>
+          <td class="paramname"><em>list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ad9ea42f1a4bf2086d7cc0162dbe0777e">freefunc_t</a>&#160;</td>
+          <td class="paramname"><em>freefunc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a676f641fb1430f6743ba4003d6d12bad"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* dlinkedlist_getvalue </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="dlinkedlist_8h.html#acc8b1a7cee59064e48576e859c375219">dlinkedlist_t</a> *&#160;</td>
+          <td class="paramname"><em>list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a55c0a15b38cafdd7988ccca8d9437054"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dlinkedlist_insert </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="dlinkedlist_8h.html#acc8b1a7cee59064e48576e859c375219">dlinkedlist_t</a> *&#160;</td>
+          <td class="paramname"><em>list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="dlinkedlist_8h_a55c0a15b38cafdd7988ccca8d9437054_cgraph.png" border="0" usemap="#dlinkedlist_8h_a55c0a15b38cafdd7988ccca8d9437054_cgraph" alt=""/></div>
+<!-- MAP 7 -->
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="af95cbe6725ac6d410a66d395da23caad"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int dlinkedlist_length </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="dlinkedlist_8h.html#acc8b1a7cee59064e48576e859c375219">dlinkedlist_t</a> *&#160;</td>
+          <td class="paramname"><em>list</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0d8edc8df7850bb65e7cdb0c19bd33f1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="dlinkedlist_8h.html#acc8b1a7cee59064e48576e859c375219">dlinkedlist_t</a>* dlinkedlist_new </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="dlinkedlist_8h_a0d8edc8df7850bb65e7cdb0c19bd33f1_icgraph.png" border="0" usemap="#dlinkedlist_8h_a0d8edc8df7850bb65e7cdb0c19bd33f1_icgraph" alt=""/></div>
+<!-- MAP 8 -->
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="adac8101ad9733d439b3b9bbce28d5091"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dlinkedlist_print </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="dlinkedlist_8h.html#acc8b1a7cee59064e48576e859c375219">dlinkedlist_t</a> *&#160;</td>
+          <td class="paramname"><em>list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a06d836e104988fed0461b03319344b02">printfn_t</a>&#160;</td>
+          <td class="paramname"><em>printfn</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac6e7e421ef3d436f306f2f04c75f5439"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dlinkedlist_print_nonewline </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="dlinkedlist_8h.html#acc8b1a7cee59064e48576e859c375219">dlinkedlist_t</a> *&#160;</td>
+          <td class="paramname"><em>list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a06d836e104988fed0461b03319344b02">printfn_t</a>&#160;</td>
+          <td class="paramname"><em>printfn</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4482cab40fed8c8f22e413a5fb2139b9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* dlinkedlist_remove </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="dlinkedlist_8h.html#acc8b1a7cee59064e48576e859c375219">dlinkedlist_t</a> *&#160;</td>
+          <td class="paramname"><em>list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a6eb913185d0534a960d9798cfe7b0f08">comparefn_t</a>&#160;</td>
+          <td class="paramname"><em>comparefn</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="dlinkedlist_8h_a4482cab40fed8c8f22e413a5fb2139b9_cgraph.png" border="0" usemap="#dlinkedlist_8h_a4482cab40fed8c8f22e413a5fb2139b9_cgraph" alt=""/></div>
+<!-- MAP 9 -->
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a3259a6302a06dac596973d5ed8159972"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="dlinkedlist_8h.html#acc8b1a7cee59064e48576e859c375219">dlinkedlist_t</a>* dlinkedlist_removeall </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="dlinkedlist_8h.html#acc8b1a7cee59064e48576e859c375219">dlinkedlist_t</a> *&#160;</td>
+          <td class="paramname"><em>list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a6eb913185d0534a960d9798cfe7b0f08">comparefn_t</a>&#160;</td>
+          <td class="paramname"><em>comparefn</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="dlinkedlist_8h_a3259a6302a06dac596973d5ed8159972_cgraph.png" border="0" usemap="#dlinkedlist_8h_a3259a6302a06dac596973d5ed8159972_cgraph" alt=""/></div>
+<!-- MAP 10 -->
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="afcfe1d7d98e9b7e5dd413cff8d655417"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dlinkedlist_setvalue </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="dlinkedlist_8h.html#acc8b1a7cee59064e48576e859c375219">dlinkedlist_t</a> *&#160;</td>
+          <td class="paramname"><em>list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 21 2018 12:51:57 for C Datastructures by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Oct 21 2018 13:34:51 for C Datastructures by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

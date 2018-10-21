@@ -214,7 +214,7 @@ extern inline void * arraylist_delete(arraylist_t * arraylist,int index){
 }
 
 /*!
-	removes the first index returned by arralist_find. needs a comparefn 
+	removes the first index returned by arralist_find. needs a comparefn. returns removed item to free
 */
 extern inline void * arraylist_remove(arraylist_t * arraylist,void * value, comparefn_t comparefn){
 	int index = arraylist_find(arraylist,value,comparefn);
@@ -225,7 +225,7 @@ extern inline void * arraylist_remove(arraylist_t * arraylist,void * value, comp
 }
 
 /*!
-	removes all items found by arraylist_find
+	removes all items found by arraylist_find returns an arraylist of removed items to free
 */
 extern inline arraylist_t * arraylist_removeall(arraylist_t * arraylist,void * value, comparefn_t comparefn){
 	int index = 0;

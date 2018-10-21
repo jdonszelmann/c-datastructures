@@ -115,7 +115,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">//linkedlist-arraylist</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="conversions_8h.html#aae048877dfb2fb809f7ad2b1d789bc67">   25</a></span>&#160;<span class="keyword">extern</span> <span class="keyword">inline</span> <a class="code" href="structarraylist.html">arraylist_t</a> * <a class="code" href="conversions_8h.html#aae048877dfb2fb809f7ad2b1d789bc67">linkedlist_toarraylist</a>(<a class="code" href="structlinkedlist.html">linkedlist_t</a> * list){</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="structarraylist.html">arraylist_t</a> * newlist = <a class="code" href="arraylist_8h.html#a0f3dce9a4ff6eec624a885cab52d5cb1">arraylist_new</a>();</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">foreach</span>(link,list){</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="linkedlist_8h.html#ab3a45405f2ba3ad0f60a8b1aab951fc8">linkedlist_foreach</a>(link,list){</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <a class="code" href="arraylist_8h.html#ac567053ff89cc5cae2050d9a7a844c6a">arraylist_append</a>(newlist,link-&gt;<a class="code" href="structarraylist.html#a9cdb9a34f105f709d0cce3086cd5d65f">value</a>);</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    }</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordflow">return</span> newlist;</div>
@@ -133,7 +133,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">//linkedlist-stack</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="conversions_8h.html#a9ce143cef9650633637b0d6dac7d148f">   43</a></span>&#160;<span class="keyword">extern</span> <span class="keyword">inline</span> <a class="code" href="structstack.html">stack_t</a> * <a class="code" href="conversions_8h.html#a9ce143cef9650633637b0d6dac7d148f">linkedlist_tostack</a>(<a class="code" href="structlinkedlist.html">linkedlist_t</a> * list){</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="structstack.html">stack_t</a> * newstack = <a class="code" href="stack_8h.html#a47b5ad020d9e838d4fc7923463c090ec">stack_new</a>();</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">foreach</span>(link,list){</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="linkedlist_8h.html#ab3a45405f2ba3ad0f60a8b1aab951fc8">linkedlist_foreach</a>(link,list){</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <a class="code" href="arraylist_8h.html#ac567053ff89cc5cae2050d9a7a844c6a">arraylist_append</a>(newstack-&gt;<a class="code" href="structstack.html#a182563f1c44bfd1cb7eb69b973a09d8f">data</a>,link-&gt;<a class="code" href="structarraylist.html#a9cdb9a34f105f709d0cce3086cd5d65f">value</a>);</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">return</span> newstack;</div>
@@ -160,7 +160,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
 <div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="conversions_8h.html#a10809d1f437a2e27860933effc8861c8">   70</a></span>&#160;<span class="keyword">extern</span> <span class="keyword">inline</span> <a class="code" href="structqueue.html">queue_t</a> * <a class="code" href="conversions_8h.html#a10809d1f437a2e27860933effc8861c8">linkedlist_toqueue</a>(<a class="code" href="structlinkedlist.html">linkedlist_t</a> * list){</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <a class="code" href="structqueue.html">queue_t</a> * newqueue = <a class="code" href="queue_8h.html#a217fbe3b1f9577519fd427b2dd1d3455">queue_new</a>();</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">foreach</span>(link,list){</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <a class="code" href="linkedlist_8h.html#ab3a45405f2ba3ad0f60a8b1aab951fc8">linkedlist_foreach</a>(link,list){</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <a class="code" href="queue_8h.html#aaa5f0c1b3065281d9f8b89c7e3279ed9">queue_enqueue</a>(newqueue,link-&gt;<a class="code" href="structqueue.html#aeebb048f43c062866725736ee4411bf4">value</a>);</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">return</span> newqueue;</div>
@@ -224,6 +224,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="conversions_8h_html_ae259c843702705676bb721ce24b23aca"><div class="ttname"><a href="conversions_8h.html#ae259c843702705676bb721ce24b23aca">arraylist_toqueue</a></div><div class="ttdeci">queue_t * arraylist_toqueue(arraylist_t *arraylist)</div><div class="ttdef"><b>Definition:</b> conversions.h:88</div></div>
 <div class="ttc" id="structstring_html_a41ac0358b5691da5af587b49daef8733"><div class="ttname"><a href="structstring.html#a41ac0358b5691da5af587b49daef8733">string::filled</a></div><div class="ttdeci">int filled</div><div class="ttdef"><b>Definition:</b> string.h:20</div></div>
+<div class="ttc" id="linkedlist_8h_html_ab3a45405f2ba3ad0f60a8b1aab951fc8"><div class="ttname"><a href="linkedlist_8h.html#ab3a45405f2ba3ad0f60a8b1aab951fc8">linkedlist_foreach</a></div><div class="ttdeci">#define linkedlist_foreach(__value, __list)</div><div class="ttdoc">Provides single linked lists. </div><div class="ttdef"><b>Definition:</b> linkedlist.h:15</div></div>
 <div class="ttc" id="string_8h_html"><div class="ttname"><a href="string_8h.html">string.h</a></div></div>
 <div class="ttc" id="conversions_8h_html_a60da266ab8418ddba916831776326959"><div class="ttname"><a href="conversions_8h.html#a60da266ab8418ddba916831776326959">string_tocharpnt</a></div><div class="ttdeci">char * string_tocharpnt(string_t *string)</div><div class="ttdef"><b>Definition:</b> conversions.h:127</div></div>
 <div class="ttc" id="conversions_8h_html_ae5a51aa32dcc470210c8deaf9ab3bcc6"><div class="ttname"><a href="conversions_8h.html#ae5a51aa32dcc470210c8deaf9ab3bcc6">queue_tostack</a></div><div class="ttdeci">stack_t * queue_tostack(queue_t *queue)</div><div class="ttdef"><b>Definition:</b> conversions.h:98</div></div>
@@ -264,7 +265,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 21 2018 12:51:57 for C Datastructures by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Oct 21 2018 13:34:50 for C Datastructures by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

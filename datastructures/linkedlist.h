@@ -12,7 +12,7 @@
 #include "datastructures.h"
 #include "types.h"
 
-#define foreach(__value,__list) for(linkedlist_link_t * __value=__list->HEAD;__value!=NULL;__value=__value->next)
+#define linkedlist_foreach(__value,__list) for(linkedlist_link_t * __value=__list->HEAD;__value!=NULL;__value=__value->next)
 
 
 typedef struct linkedlist_link{
@@ -56,7 +56,7 @@ static inline linkedlist_link_t * linkedlist_seek(linkedlist_t * list, int posit
 	}
 
 	int i = 0;
-	foreach(link,list){
+	linkedlist_foreach(link,list){
 		if(i == position){
 			return link;
 		}
@@ -108,14 +108,14 @@ static inline void linkedlist_link_free(linkedlist_link_t * list){
 }
 
 extern inline void linkedlist_freeall(linkedlist_t * list){
-	foreach(link,list){
+	linkedlist_foreach(link,list){
 		linkedlist_link_freeall(link);
 	}
 	free(list);
 }
 
 extern inline void linkedlist_freefunc(linkedlist_t * list, freefunc_t freefunc){
-	foreach(link,list){
+	linkedlist_foreach(link,list){
 		linkedlist_link_freefunc(link,freefunc);
 	}
 	free(list);
@@ -123,7 +123,7 @@ extern inline void linkedlist_freefunc(linkedlist_t * list, freefunc_t freefunc)
 
 
 extern inline void linkedlist_free(linkedlist_t * list){
-	foreach(link,list){
+	linkedlist_foreach(link,list){
 		linkedlist_link_free(link);
 	}
 	free(list);
@@ -131,7 +131,7 @@ extern inline void linkedlist_free(linkedlist_t * list){
 
 extern inline int linkedlist_find(linkedlist_t * list, void * value, comparefn_t comparefn){
 	int index = 0;
-	foreach(link,list){
+	linkedlist_foreach(link,list){
 		if(comparefn(link->value,value)){
 			return index;
 		}
@@ -218,7 +218,7 @@ extern inline void linkedlist_insert(linkedlist_t * list, int index,void * value
 
 extern inline void linkedlist_print(linkedlist_t * list, printfn_t printfn){
 	printf("single linked list [");
-	foreach(i,list){
+	linkedlist_foreach(i,list){
 		if(i != list->HEAD) {printf(",");}
 		printfn(i->value);
 	}
@@ -227,7 +227,7 @@ extern inline void linkedlist_print(linkedlist_t * list, printfn_t printfn){
 
 extern inline void linkedlist_print_nonewline(linkedlist_t * list, printfn_t printfn){
 	printf("single linked list [");
-	foreach(i,list){
+	linkedlist_foreach(i,list){
 		if(i != list->HEAD) {printf(",");}
 		printfn(i->value);
 	}
@@ -237,20 +237,20 @@ extern inline void linkedlist_print_nonewline(linkedlist_t * list, printfn_t pri
 
 extern inline linkedlist_t * linkedlist_copy(linkedlist_t * list){
 	linkedlist_t * newlist = linkedlist_new();
-	foreach(link,list){
+	linkedlist_foreach(link,list){
 		linkedlist_append(newlist,link->value);
 	}
 	return newlist;
 }
 
 extern inline void linkedlist_extend(linkedlist_t * list,linkedlist_t * other){
-	foreach(link,other){
+	linkedlist_foreach(link,other){
 		linkedlist_append(list,link->value);
 	}
 }
 
 extern inline void linkedlist_clear(linkedlist_t * list){
-	foreach(link,list){
+	linkedlist_foreach(link,list){
 		linkedlist_link_free(link);
 	}
 	list->HEAD=NULL;
@@ -260,7 +260,7 @@ extern inline void linkedlist_clear(linkedlist_t * list){
 
 
 extern inline void linkedlist_clearall(linkedlist_t * list){
-	foreach(link,list){
+	linkedlist_foreach(link,list){
 		linkedlist_link_freeall(link);
 	}
 	list->HEAD=NULL;

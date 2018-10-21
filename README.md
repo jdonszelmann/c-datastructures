@@ -12,7 +12,7 @@ ___
  - [x] Binary Tree
  - [x] Stack
  - [x] Linked List (Single)
- - [ ] Linked List (Double)
+ - [x] Linked List (Double) (tests needed, does not actively utilize the double linked list feature. iterator datstructure??)
  - [ ] Array
  - [ ] Multimap
  - [ ] Dictionary
@@ -21,8 +21,23 @@ ___
  - [x] Queue (Single ended)
  - [ ] Queue (Double ended)
  - [ ] Tree
- - [ ] Heap
+ - [ ] Heap (Max)
+ - [ ] Heap (Min)
  - [ ] Priority Queue (Single ended)
  - [ ] Priority Queue (Double ended)
  - [ ] Graph
  - [x] String
+ - [ ] Iterator?
+
+ ___
+
+ todo:
+ 	comments for everything except arraylist
+ 	arraylist index operator overloading maybe?
+ 	array
+ 	array index operator overloading maybe?
+ 	arraylist negative indices
+ 	conversions: dlinkedlist --> linkedlist
+ 	conversions: dlinkedlist --> arraylist
+ 	conversions: dlinkedlist --> stack
+ 	conversions: dlinkedlist --> queue

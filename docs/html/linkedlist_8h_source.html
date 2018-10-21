@@ -102,7 +102,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="datastructures_8h.html">datastructures.h</a>&quot;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="types_8h.html">types.h</a>&quot;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="linkedlist_8h.html#af8ab59a9f3a4cb82ec59bbc564720bc7">   15</a></span>&#160;<span class="preprocessor">#define foreach(__value,__list) for(linkedlist_link_t * __value=__list-&gt;HEAD;__value!=NULL;__value=__value-&gt;next)</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="linkedlist_8h.html#ab3a45405f2ba3ad0f60a8b1aab951fc8">   15</a></span>&#160;<span class="preprocessor">#define linkedlist_foreach(__value,__list) for(linkedlist_link_t * __value=__list-&gt;HEAD;__value!=NULL;__value=__value-&gt;next)</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
 <div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="structlinkedlist__link.html">   18</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structlinkedlist__link.html">linkedlist_link</a>{</div>
@@ -146,7 +146,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">int</span> i = 0;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">foreach</span>(link,list){</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="linkedlist_8h.html#ab3a45405f2ba3ad0f60a8b1aab951fc8">linkedlist_foreach</a>(link,list){</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">if</span>(i == position){</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <span class="keywordflow">return</span> link;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        }</div>
@@ -198,14 +198,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;}</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
 <div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="linkedlist_8h.html#a497ac8e384208571b56e9423daa4a1aa">  110</a></span>&#160;<span class="keyword">extern</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="linkedlist_8h.html#a497ac8e384208571b56e9423daa4a1aa">linkedlist_freeall</a>(<a class="code" href="structlinkedlist.html">linkedlist_t</a> * list){</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordflow">foreach</span>(link,list){</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <a class="code" href="linkedlist_8h.html#ab3a45405f2ba3ad0f60a8b1aab951fc8">linkedlist_foreach</a>(link,list){</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        linkedlist_link_freeall(link);</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    }</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    free(list);</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;}</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
 <div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="linkedlist_8h.html#a71fcac77a0db528f605043abbecbb92b">  117</a></span>&#160;<span class="keyword">extern</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="linkedlist_8h.html#a71fcac77a0db528f605043abbecbb92b">linkedlist_freefunc</a>(<a class="code" href="structlinkedlist.html">linkedlist_t</a> * list, <a class="code" href="types_8h.html#ad9ea42f1a4bf2086d7cc0162dbe0777e">freefunc_t</a> freefunc){</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordflow">foreach</span>(link,list){</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <a class="code" href="linkedlist_8h.html#ab3a45405f2ba3ad0f60a8b1aab951fc8">linkedlist_foreach</a>(link,list){</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        linkedlist_link_freefunc(link,freefunc);</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    }</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    free(list);</div>
@@ -213,7 +213,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
 <div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="linkedlist_8h.html#a9baa76eab0d60a88433707fd972bdcb5">  125</a></span>&#160;<span class="keyword">extern</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="linkedlist_8h.html#a9baa76eab0d60a88433707fd972bdcb5">linkedlist_free</a>(<a class="code" href="structlinkedlist.html">linkedlist_t</a> * list){</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordflow">foreach</span>(link,list){</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <a class="code" href="linkedlist_8h.html#ab3a45405f2ba3ad0f60a8b1aab951fc8">linkedlist_foreach</a>(link,list){</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        linkedlist_link_free(link);</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    }</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    free(list);</div>
@@ -221,7 +221,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
 <div class="line"><a name="l00132"></a><span class="lineno"><a class="line" href="linkedlist_8h.html#ad1335de08e0eb643decaa14f11566ae8">  132</a></span>&#160;<span class="keyword">extern</span> <span class="keyword">inline</span> <span class="keywordtype">int</span> <a class="code" href="linkedlist_8h.html#ad1335de08e0eb643decaa14f11566ae8">linkedlist_find</a>(<a class="code" href="structlinkedlist.html">linkedlist_t</a> * list, <span class="keywordtype">void</span> * value, <a class="code" href="types_8h.html#a6eb913185d0534a960d9798cfe7b0f08">comparefn_t</a> comparefn){</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordtype">int</span> index = 0;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordflow">foreach</span>(link,list){</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <a class="code" href="linkedlist_8h.html#ab3a45405f2ba3ad0f60a8b1aab951fc8">linkedlist_foreach</a>(link,list){</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        <span class="keywordflow">if</span>(comparefn(link-&gt;<a class="code" href="structlinkedlist__link.html#a960af5620bc68438ce7326d71bd57f73">value</a>,value)){</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;            <span class="keywordflow">return</span> index;</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        }</div>
@@ -308,7 +308,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;</div>
 <div class="line"><a name="l00219"></a><span class="lineno"><a class="line" href="linkedlist_8h.html#acea193a442d7efdcf7300ed0e10d1590">  219</a></span>&#160;<span class="keyword">extern</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="linkedlist_8h.html#acea193a442d7efdcf7300ed0e10d1590">linkedlist_print</a>(<a class="code" href="structlinkedlist.html">linkedlist_t</a> * list, <a class="code" href="types_8h.html#a06d836e104988fed0461b03319344b02">printfn_t</a> printfn){</div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    printf(<span class="stringliteral">&quot;single linked list [&quot;</span>);</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <span class="keywordflow">foreach</span>(i,list){</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <a class="code" href="linkedlist_8h.html#ab3a45405f2ba3ad0f60a8b1aab951fc8">linkedlist_foreach</a>(i,list){</div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        <span class="keywordflow">if</span>(i != list-&gt;<a class="code" href="structlinkedlist.html#ac2dca7c74d0169384ddcd70bb6682e26">HEAD</a>) {printf(<span class="stringliteral">&quot;,&quot;</span>);}</div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        printfn(i-&gt;value);</div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    }</div>
@@ -317,7 +317,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;</div>
 <div class="line"><a name="l00228"></a><span class="lineno"><a class="line" href="linkedlist_8h.html#ae3feb683b3529374b1e0caad544e9cb4">  228</a></span>&#160;<span class="keyword">extern</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="linkedlist_8h.html#ae3feb683b3529374b1e0caad544e9cb4">linkedlist_print_nonewline</a>(<a class="code" href="structlinkedlist.html">linkedlist_t</a> * list, <a class="code" href="types_8h.html#a06d836e104988fed0461b03319344b02">printfn_t</a> printfn){</div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    printf(<span class="stringliteral">&quot;single linked list [&quot;</span>);</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <span class="keywordflow">foreach</span>(i,list){</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <a class="code" href="linkedlist_8h.html#ab3a45405f2ba3ad0f60a8b1aab951fc8">linkedlist_foreach</a>(i,list){</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        <span class="keywordflow">if</span>(i != list-&gt;<a class="code" href="structlinkedlist.html#ac2dca7c74d0169384ddcd70bb6682e26">HEAD</a>) {printf(<span class="stringliteral">&quot;,&quot;</span>);}</div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        printfn(i-&gt;value);</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    }</div>
@@ -327,20 +327,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;</div>
 <div class="line"><a name="l00238"></a><span class="lineno"><a class="line" href="linkedlist_8h.html#a2a4f9f3c84591582c120f40a15c825f2">  238</a></span>&#160;<span class="keyword">extern</span> <span class="keyword">inline</span> <a class="code" href="structlinkedlist.html">linkedlist_t</a> * <a class="code" href="linkedlist_8h.html#a2a4f9f3c84591582c120f40a15c825f2">linkedlist_copy</a>(<a class="code" href="structlinkedlist.html">linkedlist_t</a> * list){</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <a class="code" href="structlinkedlist.html">linkedlist_t</a> * newlist = <a class="code" href="linkedlist_8h.html#ad80787e592478d8c4710112beb673762">linkedlist_new</a>();</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    <span class="keywordflow">foreach</span>(link,list){</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    <a class="code" href="linkedlist_8h.html#ab3a45405f2ba3ad0f60a8b1aab951fc8">linkedlist_foreach</a>(link,list){</div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        <a class="code" href="linkedlist_8h.html#a0d9503a42d93b5117f220cb0767a9d0a">linkedlist_append</a>(newlist,link-&gt;<a class="code" href="structlinkedlist__link.html#a960af5620bc68438ce7326d71bd57f73">value</a>);</div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    }</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    <span class="keywordflow">return</span> newlist;</div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;}</div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;</div>
 <div class="line"><a name="l00246"></a><span class="lineno"><a class="line" href="linkedlist_8h.html#afd372447bae67e0e67fc50453f780360">  246</a></span>&#160;<span class="keyword">extern</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="linkedlist_8h.html#afd372447bae67e0e67fc50453f780360">linkedlist_extend</a>(<a class="code" href="structlinkedlist.html">linkedlist_t</a> * list,<a class="code" href="structlinkedlist.html">linkedlist_t</a> * other){</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    <span class="keywordflow">foreach</span>(link,other){</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    <a class="code" href="linkedlist_8h.html#ab3a45405f2ba3ad0f60a8b1aab951fc8">linkedlist_foreach</a>(link,other){</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        <a class="code" href="linkedlist_8h.html#a0d9503a42d93b5117f220cb0767a9d0a">linkedlist_append</a>(list,link-&gt;<a class="code" href="structlinkedlist__link.html#a960af5620bc68438ce7326d71bd57f73">value</a>);</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    }</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;}</div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;</div>
 <div class="line"><a name="l00252"></a><span class="lineno"><a class="line" href="linkedlist_8h.html#aedd304dba4fb7eb2c2580507d6263a77">  252</a></span>&#160;<span class="keyword">extern</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="linkedlist_8h.html#aedd304dba4fb7eb2c2580507d6263a77">linkedlist_clear</a>(<a class="code" href="structlinkedlist.html">linkedlist_t</a> * list){</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    <span class="keywordflow">foreach</span>(link,list){</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    <a class="code" href="linkedlist_8h.html#ab3a45405f2ba3ad0f60a8b1aab951fc8">linkedlist_foreach</a>(link,list){</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        linkedlist_link_free(link);</div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    }</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    list-&gt;<a class="code" href="structlinkedlist.html#ac2dca7c74d0169384ddcd70bb6682e26">HEAD</a>=NULL;</div>
@@ -350,7 +350,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;</div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;</div>
 <div class="line"><a name="l00262"></a><span class="lineno"><a class="line" href="linkedlist_8h.html#ad3d5bcfd5534d36a1ecd9139bf5c45c7">  262</a></span>&#160;<span class="keyword">extern</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="linkedlist_8h.html#ad3d5bcfd5534d36a1ecd9139bf5c45c7">linkedlist_clearall</a>(<a class="code" href="structlinkedlist.html">linkedlist_t</a> * list){</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    <span class="keywordflow">foreach</span>(link,list){</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    <a class="code" href="linkedlist_8h.html#ab3a45405f2ba3ad0f60a8b1aab951fc8">linkedlist_foreach</a>(link,list){</div>
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        linkedlist_link_freeall(link);</div>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    }</div>
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    list-&gt;<a class="code" href="structlinkedlist.html#ac2dca7c74d0169384ddcd70bb6682e26">HEAD</a>=NULL;</div>
@@ -364,6 +364,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="linkedlist_8h_html_ad1335de08e0eb643decaa14f11566ae8"><div class="ttname"><a href="linkedlist_8h.html#ad1335de08e0eb643decaa14f11566ae8">linkedlist_find</a></div><div class="ttdeci">int linkedlist_find(linkedlist_t *list, void *value, comparefn_t comparefn)</div><div class="ttdef"><b>Definition:</b> linkedlist.h:132</div></div>
 <div class="ttc" id="types_8h_html"><div class="ttname"><a href="types_8h.html">types.h</a></div></div>
 <div class="ttc" id="linkedlist_8h_html_ab5209fd6cd52ac339f1d35416c63e0c3"><div class="ttname"><a href="linkedlist_8h.html#ab5209fd6cd52ac339f1d35416c63e0c3">linkedlist_insert</a></div><div class="ttdeci">void linkedlist_insert(linkedlist_t *list, int index, void *value)</div><div class="ttdef"><b>Definition:</b> linkedlist.h:190</div></div>
+<div class="ttc" id="linkedlist_8h_html_ab3a45405f2ba3ad0f60a8b1aab951fc8"><div class="ttname"><a href="linkedlist_8h.html#ab3a45405f2ba3ad0f60a8b1aab951fc8">linkedlist_foreach</a></div><div class="ttdeci">#define linkedlist_foreach(__value, __list)</div><div class="ttdoc">Provides single linked lists. </div><div class="ttdef"><b>Definition:</b> linkedlist.h:15</div></div>
 <div class="ttc" id="string_8h_html"><div class="ttname"><a href="string_8h.html">string.h</a></div></div>
 <div class="ttc" id="linkedlist_8h_html_aa04c959f4a8961db5b0ca68d5d21133a"><div class="ttname"><a href="linkedlist_8h.html#aa04c959f4a8961db5b0ca68d5d21133a">linkedlist_contains</a></div><div class="ttdeci">int linkedlist_contains(linkedlist_t *list, void *value, comparefn_t comparefn)</div><div class="ttdef"><b>Definition:</b> linkedlist.h:143</div></div>
 <div class="ttc" id="linkedlist_8h_html_a8a29e324327b9323202b342011683fb8"><div class="ttname"><a href="linkedlist_8h.html#a8a29e324327b9323202b342011683fb8">linkedlist_setvalue</a></div><div class="ttdeci">void linkedlist_setvalue(linkedlist_t *list, int index, void *value)</div><div class="ttdef"><b>Definition:</b> linkedlist.h:69</div></div>
@@ -398,7 +399,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 21 2018 12:51:57 for C Datastructures by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Oct 21 2018 13:34:50 for C Datastructures by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

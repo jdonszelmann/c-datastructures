@@ -184,16 +184,19 @@ int main(){
 		// queue_free(queue);
 
 	//string
-		string_t * string = charpnt_tostring("hello");
-		string_extend_charpnt(string," world!");
-		string_removeall(string,'l');
-		string_insert(string,2,'l');
-		string_insert(string,2,'l');
-		string_insert(string,9,'l');
-		printf("%i\n",string_length(string));
-		arraylist_t * split = string_split_toarraylist(string,'l');
-		arraylist_print(split,stringprintfn);
-		string_print(string);
+		// string_t * string = charpnt_tostring("hello");
+		// string_extend_charpnt(string," world!");
+		// string_removeall(string,'l');
+		// string_insert(string,2,'l');
+		// string_insert(string,2,'l');
+		// string_insert(string,9,'l');
+		// printf("%i\n",string_length(string));
+		// arraylist_t * split = string_split_toarraylist(string,'l');
+		// arraylist_print(split,stringprintfn);
+		// string_print(string);
+
+	//double linked list
+	
 
 	return 0;
 }

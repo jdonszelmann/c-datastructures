@@ -11,6 +11,7 @@ var searchData=
   ['linkedlist_5fdelete',['linkedlist_delete',['../linkedlist_8h.html#af1609596885dddc6f67ed0d76dcac826',1,'linkedlist.h']]],
   ['linkedlist_5fextend',['linkedlist_extend',['../linkedlist_8h.html#afd372447bae67e0e67fc50453f780360',1,'linkedlist.h']]],
   ['linkedlist_5ffind',['linkedlist_find',['../linkedlist_8h.html#ad1335de08e0eb643decaa14f11566ae8',1,'linkedlist.h']]],
+  ['linkedlist_5fforeach',['linkedlist_foreach',['../linkedlist_8h.html#ab3a45405f2ba3ad0f60a8b1aab951fc8',1,'linkedlist.h']]],
   ['linkedlist_5ffree',['linkedlist_free',['../linkedlist_8h.html#a9baa76eab0d60a88433707fd972bdcb5',1,'linkedlist.h']]],
   ['linkedlist_5ffreeall',['linkedlist_freeall',['../linkedlist_8h.html#a497ac8e384208571b56e9423daa4a1aa',1,'linkedlist.h']]],
   ['linkedlist_5ffreefunc',['linkedlist_freefunc',['../linkedlist_8h.html#a71fcac77a0db528f605043abbecbb92b',1,'linkedlist.h']]],

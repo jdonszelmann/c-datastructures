@@ -1,7 +1,7 @@
 var searchData=
 [
   ['set_2eh',['set.h',['../set_8h.html',1,'']]],
-  ['size',['size',['../structarraylist.html#a34c5644fa8ffbc7311f338128b35e6ce',1,'arraylist::size()'],['../structlinkedlist.html#a5984aca9f968202749b28090bff39d94',1,'linkedlist::size()'],['../structqueue.html#afb9096840ba43e124b3a58648db557cc',1,'queue::size()'],['../structstring.html#a85f64c63bd2ca5902a4649c0a1487722',1,'string::size()']]],
+  ['size',['size',['../structarraylist.html#a34c5644fa8ffbc7311f338128b35e6ce',1,'arraylist::size()'],['../structdlinkedlist.html#a69672e2f6968ed1c396a6df0c2e841bf',1,'dlinkedlist::size()'],['../structlinkedlist.html#a5984aca9f968202749b28090bff39d94',1,'linkedlist::size()'],['../structqueue.html#afb9096840ba43e124b3a58648db557cc',1,'queue::size()'],['../structstring.html#a85f64c63bd2ca5902a4649c0a1487722',1,'string::size()']]],
   ['stack',['stack',['../structstack.html',1,'']]],
   ['stack_2eh',['stack.h',['../stack_8h.html',1,'']]],
   ['stack_5fclear',['stack_clear',['../stack_8h.html#a82753d303951dbbb90c6e30734a8e204',1,'stack.h']]],
