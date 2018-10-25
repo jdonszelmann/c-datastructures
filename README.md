@@ -13,7 +13,7 @@ ___
  - [x] Stack
  - [x] Linked List (Single)
  - [x] Linked List (Double) (tests needed, does not actively utilize the double linked list feature. iterator datstructure??)
- - [ ] Array
+ - [x] Array
  - [ ] Multimap
  - [ ] Dictionary
  - [ ] Set
